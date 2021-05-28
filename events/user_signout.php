@@ -4,7 +4,7 @@
     $("#signout-navbar").click(function() {
         $.ajax({
             method: "PUT",
-            url: ECHIDNA_URI + "/token?user_token=" + $.cookie("user-token"),
+            url: ECHIDNA_URL + "/token?user_token=" + $.cookie("user-token"),
             dataType: 'json'
 
         }).done(function( msg ) {
@@ -14,7 +14,7 @@
 
           if(msg.success == 'true') {
               user_token = $.cookie("user-token", '');
-              window.location.href = ECHIDNA_URI + '/';
+              window.location.href = ECHIDNA_URL + '/';
           }
         });
     });

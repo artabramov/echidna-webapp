@@ -4,7 +4,7 @@
 
             $.ajax({
                 method: "POST",
-                url: ECHIDNA_URI + "/pass?user_email=" + $("#signin-user-email").val() + "&user_pass=" + $("#signin-user-pass").val(),
+                url: ECHIDNA_URL + "/pass?user_email=" + $("#signin-user-email").val() + "&user_pass=" + $("#signin-user-pass").val(),
                 dataType: 'json'
 
             }).done(function( msg ) {
@@ -19,7 +19,7 @@
 
                 } else {
                     $.cookie("user-token", msg.user.user_token);
-                    window.location.href = ECHIDNA_URI + '/hello';
+                    window.location.href = ECHIDNA_URL + '/?page=hello';
                 }
             });
         });

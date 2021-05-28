@@ -1,6 +1,6 @@
 <?php
-$uri = sprintf("%s://%s", isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http', $_SERVER['SERVER_NAME'] );
-$title = 'Echidna Docs';
+define( 'ECHIDNA_URL', 'http://project.local' );
+define( 'ECHIDNA_TITLE', 'Echidna Docs' );
 ?>
 
 <!-- header -->

@@ -4,7 +4,7 @@
 
             $.ajax({
                 method: "POST",
-                url: ECHIDNA_URI + "/user?user_email=" + $("#register-user-email").val() + "&user_name=" + $("#register-user-name").val(),
+                url: ECHIDNA_URL + "/user?user_email=" + $("#register-user-email").val() + "&user_name=" + $("#register-user-name").val(),
                 dataType: 'json'
 
             }).done(function( msg ) {

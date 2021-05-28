@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- title -->
-    <title><?php echo $title; ?></title>
+    <title><?php echo ECHIDNA_TITLE; ?></title>
     
   </head>
   <body>
@@ -22,7 +22,7 @@
 
     <!-- echidna consts -->
     <script>
-    const ECHIDNA_URI = 'http://project.local';
+    const ECHIDNA_URL = '<?php echo ECHIDNA_URL ?>';
     const ECHIDNA_DEBUG = true;
     </script>
 

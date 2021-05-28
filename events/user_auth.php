@@ -4,7 +4,7 @@
 
       $.ajax({
           method: "GET",
-          url: ECHIDNA_URI + "/auth?user_token=" + $.cookie("user-token"),
+          url: ECHIDNA_URL + "/auth?user_token=" + $.cookie("user-token"),
           dataType: 'json'
 
       }).done(function( msg ) {

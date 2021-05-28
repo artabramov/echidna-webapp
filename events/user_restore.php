@@ -4,7 +4,7 @@
 
             $.ajax({
                 method: "GET",
-                url: ECHIDNA_URI + "/pass?user_email=" + $("#restore-user-email").val(),
+                url: ECHIDNA_URL + "/pass?user_email=" + $("#restore-user-email").val(),
                 dataType: 'json'
 
             }).done(function( msg ) {
