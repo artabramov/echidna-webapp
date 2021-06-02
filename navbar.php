@@ -8,25 +8,19 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
 
-      <!-- users and hubs -->
-      <li id="users-and-hubs-navbar" class="nav-item dropdown d-none">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Users and hubs</a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="<?php echo ECHIDNA_URL; ?>/?page=hubs">Hubs list</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+      <!-- hubs -->
+      <li id="hubs-navbar" class="pl-2 nav-item d-none">
+        <a class="nav-link" href="<?php echo ECHIDNA_URL; ?>/?page=hubs">Hubs</a>
       </li>
 
-      <!-- documents -->
-      <li id="documents-navbar" class="pl-2 nav-item d-none">
-        <a class="nav-link" href="<?php echo ECHIDNA_URL; ?>/?page=documents">Documents <span class="badge badge-pill badge-light">+2</span></a>
+      <!-- posts -->
+      <li id="posts-navbar" class="pl-2 nav-item d-none">
+        <a class="nav-link" href="<?php echo ECHIDNA_URL; ?>/?page=posts">Posts <span class="badge badge-pill badge-light">+2</span></a>
       </li>
 
-      <!-- add document -->
-      <li  id="add-document-navbar" class="pl-3 nav-item d-none">
-        <a href="#" class="btn btn-outline-light" type="submit"><i class="material-icons">add_circle_outline</i> Add document</a>
+      <!-- add post -->
+      <li  id="add-post-navbar" class="pl-4 nav-item d-none">
+        <a href="#" class="btn btn-outline-light" type="submit"><i class="material-icons">add_circle_outline</i> Add post</a>
       </li>
 
     </ul>

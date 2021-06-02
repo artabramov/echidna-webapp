@@ -4,7 +4,7 @@
 
       $.ajax({
           method: "GET",
-          url: ECHIDNA_URL + "/auth?user_token=" + $.cookie("user-token"),
+          url: ECHIDNA_URL + "/user?user_token=" + $.cookie("user-token"),
           dataType: 'json'
 
       }).done(function( msg ) {
@@ -18,12 +18,12 @@
           $.cookie("user-token", msg.user.user_token);
 
           // update navbar
-          $("#users-and-hubs-navbar").removeClass('d-none');
-          $("#users-and-hubs-navbar").addClass('d-inline');
-          $("#documents-navbar").removeClass('d-none');
-          $("#documents-navbar").addClass('d-inline');
-          $("#add-document-navbar").removeClass('d-none');
-          $("#add-document-navbar").addClass('d-inline');
+          $("#hubs-navbar").removeClass('d-none');
+          $("#hubs-navbar").addClass('d-inline');
+          $("#posts-navbar").removeClass('d-none');
+          $("#posts-navbar").addClass('d-inline');
+          $("#add-post-navbar").removeClass('d-none');
+          $("#add-post-navbar").addClass('d-inline');
 
           $("#user-navbar").removeClass('d-none');
           $("#user-navbar").addClass('d-inline');
@@ -50,12 +50,12 @@
           $.cookie("user-token", '');
 
           // update navbar
-          $("#users-and-hubs-navbar").removeClass('d-inline');
-          $("#users-and-hubs-navbar").addClass('d-none');
-          $("#documents-navbar").removeClass('d-inline');
-          $("#documents-navbar").addClass('d-none');
-          $("#add-document-navbar").removeClass('d-inline');
-          $("#add-document-navbar").addClass('d-none');
+          $("#hubs-navbar").removeClass('d-inline');
+          $("#hubs-navbar").addClass('d-none');
+          $("#posts-navbar").removeClass('d-inline');
+          $("#posts-navbar").addClass('d-none');
+          $("#add-post-navbar").removeClass('d-inline');
+          $("#add-post-navbar").addClass('d-none');
 
           $("#user-navbar").removeClass('d-inline');
           $("#user-navbar").addClass('d-none');

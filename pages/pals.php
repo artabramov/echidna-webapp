@@ -1,4 +1,4 @@
-<h1>Hubs</h1>
+<h1>Pals</h1>
 
 <script>
     $(document).ready(function(){
@@ -8,7 +8,7 @@
 
       $.ajax({
           method: "GET",
-          url: ECHIDNA_URL + "/hub?user_token=" + $.cookie("user-token"),
+          url: ECHIDNA_URL + "/pals?user_token=" + $.cookie("user-token"),
           dataType: 'json'
 
       }).done(function( msg ) {
