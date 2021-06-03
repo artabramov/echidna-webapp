@@ -19,7 +19,7 @@
 
                 } else {
                     $.cookie("user-token", msg.user.user_token);
-                    window.location.href = ECHIDNA_URL + '/?page=hello';
+                    window.location.href = ECHIDNA_URL + '/?page=posts';
                 }
             });
         });

@@ -10,6 +10,8 @@ define( 'ECHIDNA_TITLE', 'Echidna Docs' );
 <?php require_once(__DIR__ . '/navbar.php'); ?>
 
 <!-- modals -->
+<?php require_once(__DIR__ . '/modals/hub_add.php'); ?>
+<?php require_once(__DIR__ . '/modals/post_add.php'); ?>
 <?php require_once(__DIR__ . '/modals/register.php'); ?>
 <?php require_once(__DIR__ . '/modals/registered.php'); ?>
 <?php require_once(__DIR__ . '/modals/restore.php'); ?>
@@ -17,6 +19,7 @@ define( 'ECHIDNA_TITLE', 'Echidna Docs' );
 <?php require_once(__DIR__ . '/modals/signin.php'); ?>
 
 <!-- events -->
+<?php require_once(__DIR__ . '/events/hub_add.php'); ?>
 <?php require_once(__DIR__ . '/events/user_register.php'); ?>
 <?php require_once(__DIR__ . '/events/user_restore.php'); ?>
 <?php require_once(__DIR__ . '/events/user_signin.php'); ?>

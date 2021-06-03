@@ -22,8 +22,8 @@
           $("#hubs-navbar").addClass('d-inline');
           $("#posts-navbar").removeClass('d-none');
           $("#posts-navbar").addClass('d-inline');
-          $("#add-post-navbar").removeClass('d-none');
-          $("#add-post-navbar").addClass('d-inline');
+          $("#post-add-navbar").removeClass('d-none');
+          $("#post-add-navbar").addClass('d-inline');
 
           $("#user-navbar").removeClass('d-none');
           $("#user-navbar").addClass('d-inline');
@@ -54,8 +54,8 @@
           $("#hubs-navbar").addClass('d-none');
           $("#posts-navbar").removeClass('d-inline');
           $("#posts-navbar").addClass('d-none');
-          $("#add-post-navbar").removeClass('d-inline');
-          $("#add-post-navbar").addClass('d-none');
+          $("#post-add-navbar").removeClass('d-inline');
+          $("#post-add-navbar").addClass('d-none');
 
           $("#user-navbar").removeClass('d-inline');
           $("#user-navbar").addClass('d-none');

@@ -10,7 +10,7 @@
 
       <!-- hubs -->
       <li id="hubs-navbar" class="pl-2 nav-item d-none">
-        <a class="nav-link" href="<?php echo ECHIDNA_URL; ?>/?page=hubs">Hubs</a>
+        <a class="nav-link" href="<?php echo ECHIDNA_URL; ?>/?page=hubs&hub_status=custom&offset=0">Hubs</a>
       </li>
 
       <!-- posts -->
@@ -19,8 +19,8 @@
       </li>
 
       <!-- add post -->
-      <li  id="add-post-navbar" class="pl-4 nav-item d-none">
-        <a href="#" class="btn btn-outline-light" type="submit"><i class="material-icons">add_circle_outline</i> Add post</a>
+      <li  id="post-add-navbar" class="pl-4 nav-item d-none">
+        <a href="#" data-toggle="modal" data-target="#post-add-modal" class="btn btn-outline-light"><i class="material-icons">add_circle_outline</i> Add post</a>
       </li>
 
     </ul>
