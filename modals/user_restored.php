@@ -1,4 +1,4 @@
-<div id="restored-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="restored-title" aria-hidden="true">
+<div id="modal-restored" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-restored-title" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
 
