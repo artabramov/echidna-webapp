@@ -16,18 +16,19 @@ function page(page) {
   $("#page-" + page).addClass('d-inline');
 }
 
+/*
 // posts
 $(document).ready(function(){
   $("#navbar-posts").click(function(){
-    page_switch("posts");
+    page("posts");
   });
 });
 
 // hubs
 $(document).ready(function(){
   $("#navbar-hubs").click(function(){
-    hubs_select('custom');
-    page_switch("hubs");
+    //hubs_select('custom');
+    page("hubs");
   });
 });
 
@@ -35,8 +36,12 @@ $(document).ready(function(){
 $(document).ready(function(){
   //$("#navbar-user-select").click({id: $("#navbar-user-select").attr("user-id")}, function(id){
   $("#navbar-user-select").click(function(){
-    user_select(user_id);
-    page_switch("user");
+
+    //console.log(user);
+
+    user_select(1);
+    page("user");
 
   });
 });
+*/

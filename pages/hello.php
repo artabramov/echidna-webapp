@@ -1,3 +1,3 @@
-<div id="page-hello" class="d-none">
+<div>
     <h1>Hello</h1>
 </div>

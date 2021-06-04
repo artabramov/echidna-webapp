@@ -15,10 +15,22 @@ define( 'ECHIDNA_TITLE', 'Echidna Docs' );
 <?php require_once(__DIR__ . '/modals/user_signin.php'); ?>
 
 <!-- pages -->
-<?php require_once(__DIR__ . '/pages/hello.php'); ?>
-<?php require_once(__DIR__ . '/pages/posts.php'); ?>
-<?php require_once(__DIR__ . '/pages/hubs.php'); ?>
-<?php require_once(__DIR__ . '/pages/user.php'); ?>
+<?php //require_once(__DIR__ . '/pages/hello.php'); ?>
+<?php //require_once(__DIR__ . '/pages/posts.php'); ?>
+<?php //require_once(__DIR__ . '/pages/hubs.php'); ?>
+<?php //require_once(__DIR__ . '/pages/user.php'); ?>
+
+<?php 
+if(empty($page)) {
+    require_once(__DIR__ . '/pages/hello.php'); 
+
+} elseif(file_exists( __DIR__ . '/pages/' . $page . '.php' )) {
+    require_once(__DIR__ . '/pages/' . $page . '.php'); 
+
+} else {
+    require_once(__DIR__ . '/pages/404.php'); 
+}
+?>
 
 <!-- footer -->
 <?php require_once(__DIR__ . '/footer.php'); ?>

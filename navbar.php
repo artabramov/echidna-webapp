@@ -10,12 +10,12 @@
 
       <!-- hubs -->
       <li id="navbar-hubs" class="pl-2 nav-item d-none">
-        <a class="nav-link" href="#">Hubs</a>
+        <a class="nav-link" href="<?php echo ECHIDNA_URL; ?>/?page=hubs">Hubs</a>
       </li>
 
       <!-- posts -->
       <li id="navbar-posts" class="pl-2 nav-item d-none">
-        <a class="nav-link" href="#">Posts <span class="badge badge-pill badge-light">+2</span></a>
+        <a class="nav-link" href="<?php echo ECHIDNA_URL; ?>/?page=posts">Posts <span class="badge badge-pill badge-light">+2</span></a>
       </li>
 
       <!-- post-add -->

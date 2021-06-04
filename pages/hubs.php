@@ -1,4 +1,4 @@
-<div id="page-hubs" class="d-none">
+<div>
     <h1>Hubs</h1>
 
     <a href="#" class="btn btn-link">Custom</a>

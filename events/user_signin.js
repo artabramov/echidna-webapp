@@ -14,14 +14,10 @@ $(document).ready(function(){
       }
 
       if(msg.success == "true") {
-
-        // signin
         $.cookie("user-token", msg.user.user_token);
-        window.location.href = ECHIDNA_URL + '/';
+        window.location.href = ECHIDNA_URL + '/?page=posts';
 
       } else {
-
-        // error
         $("#modal-signin-error").removeClass('d-none');
         $("#modal-signin-error").addClass('d-block');
         $("#modal-signin-error").text(msg.error);

@@ -15,7 +15,7 @@ $(document).ready(function(){
 
       if(msg.success == 'true') {
         $.cookie("user-token", '');
-        window.location.href = ECHIDNA_URL + '/';
+        window.location.href = ECHIDNA_URL + '/?page=hello';
       }
 
     });

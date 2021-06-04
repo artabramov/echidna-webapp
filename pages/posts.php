@@ -1,3 +1,3 @@
-<div id="page-posts" class="d-none">
+<div>
     <h1>Posts</h1>
 </div>

@@ -1,8 +1,10 @@
-function user_select(id) {
+function user_select(user_id) {
+
+  console.log(user_id);
 
   $.ajax({
     method: "GET",
-    url: ECHIDNA_URL + "/user/" + id + "?user_token=" + user_token,
+    url: ECHIDNA_URL + "/user/" + user_id + "?user_token=" + user_token,
     dataType: 'json'
 
   }).done(function( msg ) {
