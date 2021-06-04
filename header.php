@@ -22,8 +22,9 @@
 
     <!-- echidna consts -->
     <script>
-    const ECHIDNA_URL = '<?php echo ECHIDNA_URL ?>';
     const ECHIDNA_DEBUG = true;
+    const ECHIDNA_URL = '<?php echo ECHIDNA_URL ?>';
+    const ECHIDNA_ROWS_ON_PAGE = <?php echo ECHIDNA_ROWS_ON_PAGE ?>;
     </script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -33,12 +34,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/onload.js" crossorigin="anonymous"></script>
-    <script src="<?php echo ECHIDNA_URL ?>/webapp/events/page.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/modal.js" crossorigin="anonymous"></script>
-
+    <script src="<?php echo ECHIDNA_URL ?>/webapp/events/pagination.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/user_signout.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/user_register.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/user_restore.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/user_signin.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/user_select.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/hubs_select.js" crossorigin="anonymous"></script>
+    <script src="<?php echo ECHIDNA_URL ?>/webapp/events/hub_insert.js" crossorigin="anonymous"></script>
+    

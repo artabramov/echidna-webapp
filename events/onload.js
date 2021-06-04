@@ -1,6 +1,3 @@
-// self user
-var user_token = '';
-
 $(document).ready(function(){
 
   $.ajax({
@@ -15,12 +12,10 @@ $(document).ready(function(){
     }
 
     if(msg.success == 'true') {
-      //user = msg.user;
       user_token = msg.user.user_token;
 
       // update cookie
       $.cookie("user-token", msg.user.user_token);
-      $.cookie("user-id", msg.user.id);
 
       // hubs
       $("#navbar-hubs").removeClass('d-none');
@@ -50,17 +45,14 @@ $(document).ready(function(){
       $("#navbar-signin").removeClass('d-inline');
       $("#navbar-signin").addClass('d-none');
 
-      // user name
+      // user
       $("#navbar-user-name").text(msg.user.user_name);
-
-      //page switch
-      page('posts');
+      $("#navbar-user-id").attr("href", ECHIDNA_URL + "/?page=user&user_id=" + msg.user.id);
 
     } else {
-      //var user = {};
       $.cookie("user-token", "");
-      $.cookie("user-id", 0);
 
+      /*
       // hubs
       $("#navbar-hubs").removeClass('d-inline');
       $("#navbar-hubs").addClass('d-none');
@@ -89,15 +81,11 @@ $(document).ready(function(){
       $("#navbar-signin").removeClass('d-none');
       $("#navbar-signin").addClass('d-inline');
 
-      // user name and id
+      // user name
       $("#user-name-navbar").text('');
-
-      //page switch
-      page('hello');
+      */
     }
 
   });
-
-  //console.log(user);
 
 });

@@ -10,7 +10,7 @@
 
       <!-- hubs -->
       <li id="navbar-hubs" class="pl-2 nav-item d-none">
-        <a class="nav-link" href="<?php echo ECHIDNA_URL; ?>/?page=hubs">Hubs</a>
+        <a class="nav-link" href="<?php echo ECHIDNA_URL; ?>/?page=hubs&hub_status=custom&offset=0">Hubs</a>
       </li>
 
       <!-- posts -->
@@ -40,7 +40,7 @@
       <li id="navbar-user" class="nav-item dropdown d-none">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="navbar-user-name"></span></a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <a id="navbar-user-select" class="dropdown-item" href="#">Select user</a>
+          <a id="navbar-user-id" class="dropdown-item" href="#">Select user</a>
           <a class="dropdown-item" href="#">Update user</a>
           <div class="dropdown-divider"></div>
           <a id="navbar-user-signout" class="dropdown-item" href="#">Sign out</a>

@@ -1,6 +1,7 @@
 <?php
 define( 'ECHIDNA_URL', 'http://project.local' );
 define( 'ECHIDNA_TITLE', 'Echidna Docs' );
+define( 'ECHIDNA_ROWS_ON_PAGE', 2 );
 ?>
 
 <!-- header -->
@@ -13,6 +14,7 @@ define( 'ECHIDNA_TITLE', 'Echidna Docs' );
 <?php require_once(__DIR__ . '/modals/user_register.php'); ?>
 <?php require_once(__DIR__ . '/modals/user_registered.php'); ?>
 <?php require_once(__DIR__ . '/modals/user_signin.php'); ?>
+<?php require_once(__DIR__ . '/modals/hub_insert.php'); ?>
 
 <!-- pages -->
 <?php //require_once(__DIR__ . '/pages/hello.php'); ?>
@@ -24,7 +26,7 @@ define( 'ECHIDNA_TITLE', 'Echidna Docs' );
 if(empty($page)) {
     require_once(__DIR__ . '/pages/hello.php'); 
 
-} elseif(file_exists( __DIR__ . '/pages/' . $page . '.php' )) {
+} elseif(file_exists(__DIR__ . '/pages/' . $page . '.php')) {
     require_once(__DIR__ . '/pages/' . $page . '.php'); 
 
 } else {
