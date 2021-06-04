@@ -18,10 +18,11 @@
         <div class="form-group">
           <label for="modal-signin-user-email">Email address</label>
           <input id="modal-signin-user-email" type="text" class="form-control" aria-describedby="modal-signin-user-email-help" placeholder="">
+          <small id="modal-signin-user-pass-help" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
 
         <!-- user pass -->
-        <div class="form-group">
+        <div id="modal-signin-user-pass-group" class="form-group d-none">
           <label for="modal-signin-user-pass">One-time pass</label>
           <input id="modal-signin-user-pass" class="form-control" type="text" placeholder="">
         </div>
@@ -30,7 +31,8 @@
 
       <!-- modal footer -->
       <div class="modal-footer">
-        <button id="modal-signin-submit" type="button" class="btn btn-dark">Done</button>
+        <button id="modal-signin-restore" type="button" class="btn btn-dark">Restore</button>
+        <button id="modal-signin-done" type="button" class="btn btn-dark d-none">Signin</button>
       </div>
 
     </div>

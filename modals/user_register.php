@@ -31,7 +31,7 @@
 
       <!-- modal footer -->
       <div class="modal-footer">
-        <button id="modal-register-submit" type="button" class="btn btn-dark">Done</button>
+        <button id="modal-register-done" type="button" class="btn btn-dark">Done</button>
       </div>
 
     </div>

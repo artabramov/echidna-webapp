@@ -1,10 +1,6 @@
 $(document).ready(function(){
 
-  $("#modal-signin-submit").click(function() {
-
-    if(ECHIDNA_DEBUG) {
-      console.log('signin');
-    }
+  $("#modal-signin-done").click(function() {
 
     $.ajax({
       method: "POST",

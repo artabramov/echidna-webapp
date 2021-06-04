@@ -1,14 +1,12 @@
 $(document).ready(function(){
-
-  $("#modal-register-submit").click(function(){
-
-    if(ECHIDNA_DEBUG) {
-      console.log('register');
-    }
+  
+  $("#modal-register-done").click(function(){
+    user_email = $("#modal-register-user-email").val();
+    user_name = $("#modal-register-user-name").val();
 
     $.ajax({
       method: "POST",
-      url: ECHIDNA_URL + "/user?user_email=" + $("#modal-register-user-email").val() + "&user_name=" + $("#modal-register-user-name").val(),
+      url: ECHIDNA_URL + "/user?user_email=" + user_email + "&user_name=" + user_name,
       dataType: 'json'
 
     }).done(function( msg ) {
@@ -18,20 +16,14 @@ $(document).ready(function(){
       }
 
       if(msg.success == "true") {
-
-        // switch modals
-        $('#modal-register').modal('hide');
-        $('#modal-registered').modal('show');
+        modal('registered');
 
         // hide error
         $("#modal-register-error").removeClass('d-block');
         $("#modal-register-error").addClass('d-none');
         $("#modal-register-error").text("");
 
-        // update signin input
-        $("#modal-signin-user-email").val( $("#modal-register-user-email").val() );
-
-        // clear register inputs
+        // clear form
         $("#modal-register-user-email").val("");
         $("#modal-register-user-name").val("");
 

@@ -31,11 +31,6 @@
           <a href="#" class="btn btn-outline-light" data-toggle="modal" data-target="#modal-register">Register</a>
       </li>
 
-      <!-- restore -->
-      <li id="navbar-restore" class="pl-2 nav-item d-none">
-          <a href="#" class="nav-link" data-toggle="modal" data-target="#modal-restore">Restore</a>
-      </li>
-
       <!-- signin -->
       <li id="navbar-signin" class="pl-1 nav-item d-none">
           <a href="#" class="nav-link" data-toggle="modal" data-target="#modal-signin">Signin</a>
@@ -43,11 +38,9 @@
 
       <!-- user -->
       <li id="navbar-user" class="nav-item dropdown d-none">
-        <!--<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="material-icons"><span class="material-icons-outlined">account_circle</span></i> <span id="navbar-user-name"></span></a>-->
-        <!--<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="navbar-user-id" class="badge badge-pill badge-secondary"></span> <span id="navbar-user-name"></span></a>-->
         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span id="navbar-user-name"></span></a>
         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Select user <span id="navbar-user-id"></span></a>
+          <a id="navbar-user-select" class="dropdown-item" href="#">Select user</a>
           <a class="dropdown-item" href="#">Update user</a>
           <div class="dropdown-divider"></div>
           <a id="navbar-user-signout" class="dropdown-item" href="#">Sign out</a>

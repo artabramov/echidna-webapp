@@ -1,10 +1,7 @@
+// self user
+var user = {};
+
 $(document).ready(function(){
-
-  tmp();
-
-  if(ECHIDNA_DEBUG) {
-    console.log('onload');
-  }
 
   $.ajax({
     method: "GET",
@@ -17,11 +14,11 @@ $(document).ready(function(){
       console.log(msg);
     }
 
-    // update navbar (user signed in)
     if(msg.success == 'true') {
+      user = msg.user;
 
       // update cookie
-      $.cookie("user-token", msg.user.user_token);
+      $.cookie("user-token", user['user_token']);
 
       // hubs
       $("#navbar-hubs").removeClass('d-none');
@@ -47,25 +44,18 @@ $(document).ready(function(){
       $("#navbar-register").removeClass('d-inline');
       $("#navbar-register").addClass('d-none');
 
-      // restore
-      $("#navbar-restore").removeClass('d-inline');
-      $("#navbar-restore").addClass('d-none');
-
       // signin
       $("#navbar-signin").removeClass('d-inline');
       $("#navbar-signin").addClass('d-none');
 
       // user name
-      $("#navbar-user-id").text("#" + msg.user.id);
-      $("#navbar-user-name").text(msg.user.user_name);
+      $("#navbar-user-name").text(user['user_name']);
 
       //page switch
       page_switch('posts');
 
-    // update navbar (user signed out)
     } else {
-
-      // update cookie
+      var user = {};
       $.cookie("user-token", "");
 
       // hubs
@@ -92,16 +82,11 @@ $(document).ready(function(){
       $("#navbar-register").removeClass('d-none');
       $("#navbar-register").addClass('d-inline');
 
-      // restore
-      $("#navbar-restore").removeClass('d-none');
-      $("#navbar-restore").addClass('d-inline');
-
       // signin
       $("#navbar-signin").removeClass('d-none');
       $("#navbar-signin").addClass('d-inline');
 
-      // user name
-      $("#user-name-id").text('');
+      // user name and id
       $("#user-name-navbar").text('');
 
       //page switch
