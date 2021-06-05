@@ -19,11 +19,16 @@
       </li>
 
       <!-- post-add -->
-      <li  id="navbar-post-add" class="pl-4 nav-item d-none">
+      <li  id="navbar-post-add" class="pl-3 nav-item d-none">
         <a href="#" data-toggle="modal" data-target="#modal-post-add" class="btn btn-outline-light"><i class="material-icons">add_circle_outline</i> Add post</a>
       </li>
 
+      <li  id="navbar-post-searh" class="pl-5 nav-item">
+        <input class="form-control w-200" type="search" placeholder="Search post" aria-label="Search">
+      </li>
+
     </ul>
+
     <ul class="navbar-nav ml-auto">
 
       <!-- register -->
