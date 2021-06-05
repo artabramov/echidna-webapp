@@ -1,7 +1,7 @@
 <?php
 define( 'ECHIDNA_URL', 'http://project.local' );
 define( 'ECHIDNA_TITLE', 'Echidna Docs' );
-define( 'ECHIDNA_ROWS_ON_PAGE', 2 );
+define( 'ECHIDNA_ROWS_ON_PAGE', 3 );
 ?>
 
 <!-- header -->

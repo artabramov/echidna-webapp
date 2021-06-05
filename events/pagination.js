@@ -6,8 +6,10 @@ function pagination(offset, rows_on_page, rows_count, url) {
   pages_count = Math.ceil( rows_count / rows_on_page );
   page_active = Math.floor( offset / rows_on_page );
   page_start = page_active > 1 ? page_active - 2 : 0;
-  page_end = page_active > pages_count - 2 ? pages_count : page_active + 2;
+  page_end = page_active > pages_count - 3 ? pages_count - 1 : page_active + 2;
 
+  //page_end = page_active > pages_count - 2 ? pages_count : page_active + 2;
+  //console.log(page_end);
   
   // show pagination
   if( pages_count > 1 ) {
