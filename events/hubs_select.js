@@ -18,8 +18,7 @@ function hubs_select(hub_status, offset) {
       $("#hubs-table tbody").empty();
 
       msg.hubs.forEach(function(hub) {
-          //$('#hubs-table tr:last').after('<tr><th scope="row">' + hub.id + '</th><td>' + hub.hub_status + '</td><td>' + hub.hub_name + '</td><td>' + hub.roles_count + '</td><td>' + hub.posts_count + '</td></tr>');
-          $('#hubs-table').find('tbody').append('<tr><th scope="row">' + hub.id + '</th><td>' + hub.hub_status + '</td><td>' + hub.hub_name + '</td><td>' + hub.roles_count + '</td><td>' + hub.posts_count + '</td></tr>');
+          $('#hubs-table').find('tbody').append('<tr><th scope="row">' + hub.id + '</th><td>' + hub.hub_status + '</td><td><a href="' + ECHIDNA_URL + '?page=hub_select&hub_id=' + hub.id + '">' + hub.hub_name + '</a></td><td>' + hub.roles_count + '</td><td>' + hub.posts_count + '</td></tr>');
       });
 
       pagination(offset, ECHIDNA_ROWS_ON_PAGE, msg.hubs_count, ECHIDNA_URL + '/?page=hubs&hub_status=custom&offset=');
