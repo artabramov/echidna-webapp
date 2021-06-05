@@ -1,10 +1,19 @@
 <div>
-    <h1>Hubs</h1>
-
-    <a href="<?php echo ECHIDNA_URL; ?>/?page=hubs&hub_status=custom&offset=0" class="btn <?php echo $hub_status == 'custom' ? 'btn-primary' : 'btn-link'; ?>">Custom</a>
-    <a href="<?php echo ECHIDNA_URL; ?>/?page=hubs&hub_status=trash&offset=0" class="btn <?php echo $hub_status == 'trash' ? 'btn-primary' : 'btn-link'; ?>">Trash</a>
+    <!-- title -->
+    <h1 class="d-inline">Hubs</h1>
     <button href="#" data-toggle="modal" data-target="#hub-insert-modal" class="btn btn-outline-primary">Add hub</button>
 
+    <!-- filter -->
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a href="<?php echo ECHIDNA_URL; ?>/?page=hubs&hub_status=custom&offset=0" class="<?php echo $hub_status == 'custom' ? 'nav-link active' : 'nav-link'; ?>">Custom</a>
+        </li>
+        <li class="nav-item">
+            <a href="<?php echo ECHIDNA_URL; ?>/?page=hubs&hub_status=trash&offset=0" class="<?php echo $hub_status == 'trash' ? 'nav-link active' : 'nav-link'; ?>">Trash</a>
+        </li>
+    </ul>
+
+    <!-- hubs list -->
     <table id="hubs-table" class="table">
         <thead>
             <tr>
@@ -18,6 +27,7 @@
         <tbody></tbody>
     </table>
 
+    <!-- pagination -->
     <?php require_once(__DIR__ . '/../pagination.php'); ?>
 
 </div>
