@@ -9,8 +9,17 @@
     <ul class="navbar-nav mr-auto">
 
       <!-- hubs -->
+      <!--
       <li id="navbar-hubs" class="pl-2 nav-item d-none">
         <a class="nav-link" href="<?php echo ECHIDNA_URL; ?>/?page=hubs&hub_status=custom&offset=0">Hubs</a>
+      </li>
+      -->
+      <li id="navbar-hubs" class="pl-2 nav-item dropdown d-none">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hubs</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="<?php echo ECHIDNA_URL; ?>/?page=hubs&hub_status=custom&offset=0">Hubs</a>
+          <a class="dropdown-item" href="#">Roles <span class="badge badge-pill badge-dark">+1</span></a>
+        </div>
       </li>
 
       <!-- posts -->
