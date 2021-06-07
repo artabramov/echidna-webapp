@@ -9,11 +9,11 @@
     <ul class="navbar-nav mr-auto">
 
       <!-- hubs -->
-      <!--
       <li id="navbar-hubs" class="pl-2 nav-item d-none">
-        <a class="nav-link" href="<?php echo ECHIDNA_URL; ?>/?page=hubs&hub_status=custom&offset=0">Hubs</a>
+        <a class="nav-link" href="<?php echo ECHIDNA_URL; ?>/?page=hub_rows&offset=0">Hubs</a>
       </li>
-      -->
+
+      <!--
       <li id="navbar-hubs" class="pl-2 nav-item dropdown d-none">
         <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hubs</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -21,6 +21,7 @@
           <a class="dropdown-item" href="#">Roles <span class="badge badge-pill badge-dark">+1</span></a>
         </div>
       </li>
+      -->
 
       <!-- posts -->
       <li id="navbar-posts" class="pl-2 nav-item d-none">
@@ -32,7 +33,8 @@
         <a href="#" data-toggle="modal" data-target="#modal-post-add" class="btn btn-outline-light"><i class="material-icons">add_circle_outline</i> Add post</a>
       </li>
 
-      <li  id="navbar-post-searh" class="pl-5 nav-item">
+      <!-- post search -->
+      <li  id="navbar-post-search" class="pl-5 nav-item d-none">
         <input class="form-control w-200" type="search" placeholder="Search post" aria-label="Search">
       </li>
 

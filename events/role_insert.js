@@ -3,7 +3,7 @@ $(document).ready(function(){
 
         $.ajax({
             method: "POST",
-            url: ECHIDNA_URL + "/role?user_token=" + $.cookie("user-token") + "&hub_name=" + $("#hub-insert-name").val(),
+            url: ECHIDNA_URL + "/role?user_token=" + $.cookie("user-token") + "&hub_id=" + $("#role-insert-hub-id").val() + "&user_email=" + $("#role-insert-user-email").val() + "&user_role=" + $("input[name='user-role']:checked").val(),
             dataType: 'json'
 
         }).done(function( msg ) {
@@ -13,12 +13,12 @@ $(document).ready(function(){
             }
 
             if(msg.success == "true") {
-              window.location.href = ECHIDNA_URL + '/?page=hubs&hub_status=custom&offset=0';
+              window.location.href = ECHIDNA_URL + '/?page=hub_select&hub_id=' + $("#role-insert-hub-id").val();
               
             } else {
-              $("#hub-insert-error").removeClass('d-none');
-              $("#hub-insert-error").addClass('d-block');
-              $("#hub-insert-error").text(msg.error);
+              $("#role-insert-error").removeClass('d-none');
+              $("#role-insert-error").addClass('d-block');
+              $("#role-insert-error").text(msg.error);
             }
            
         });

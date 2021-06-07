@@ -20,11 +20,57 @@
             <input id="role-insert-hub-id" type="text" class="form-control" aria-describedby="role-insert-hub-id-help" value="<?php echo $hub_id; ?>" placeholder="">
         </div>
 
-        <!-- user id -->
+        <!-- user email -->
         <div class="form-group">
-            <label for="role-insert-user-id">User id</label>
-            <input id="role-insert-user-id" type="text" class="form-control" aria-describedby="role-insert-user-id-help" placeholder="">
+            <label for="role-insert-user-email">User email</label>
+            <input id="role-insert-user-email" type="text" class="form-control" aria-describedby="role-insert-user-email-help" placeholder="">
         </div>
+
+        <!-- user role: admin -->
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="user-role" id="user-role-admin" value="admin" checked>
+          <label class="form-check-label" for="user-role-admin">
+            admin
+            <small class="form-text text-muted">
+              Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+            </small>
+          </label>
+          
+        </div>
+
+        <!-- user role: author -->
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="user-role" id="user-role-author" value="author">
+          <label class="form-check-label" for="user-role-author">
+            author
+            <small class="form-text text-muted">
+              Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+            </small>
+          </label>
+        </div>
+
+        <!-- user role: editor -->
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="user-role" id="user-role-editor" value="editor">
+          <label class="form-check-label" for="user-role-editor">
+            editor
+            <small class="form-text text-muted">
+              Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+            </small>
+          </label>
+        </div>
+
+        <!-- user role: reader -->
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="user-role" id="user-role-reader" value="reader">
+          <label class="form-check-label" for="user-role-reader">
+            reader
+            <small class="form-text text-muted">
+              Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+            </small>
+          </label>
+        </div>
+
 
       </div>
 

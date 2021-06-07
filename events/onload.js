@@ -29,6 +29,14 @@ $(document).ready(function(){
       $("#navbar-post-add").removeClass('d-none');
       $("#navbar-post-add").addClass('d-inline');
 
+      // post search
+      $("#navbar-post-search").removeClass('d-none');
+      $("#navbar-post-search").addClass('d-inline');
+
+      // user data
+      $("#navbar-user-name").text(msg.user.user_name);
+      $("#navbar-user-id").attr("href", ECHIDNA_URL + "/?page=user&user_id=" + msg.user.id);
+
       // user
       $("#navbar-user").removeClass('d-none');
       $("#navbar-user").addClass('d-inline');
@@ -36,42 +44,9 @@ $(document).ready(function(){
       // signout
       $("#navbar-signout").removeClass('d-none');
       $("#navbar-signout").addClass('d-inline');
-      
-      // register
-      $("#navbar-register").removeClass('d-inline');
-      $("#navbar-register").addClass('d-none');
-
-      // signin
-      $("#navbar-signin").removeClass('d-inline');
-      $("#navbar-signin").addClass('d-none');
-
-      // user
-      $("#navbar-user-name").text(msg.user.user_name);
-      $("#navbar-user-id").attr("href", ECHIDNA_URL + "/?page=user&user_id=" + msg.user.id);
 
     } else {
       $.cookie("user-token", "");
-
-      /*
-      // hubs
-      $("#navbar-hubs").removeClass('d-inline');
-      $("#navbar-hubs").addClass('d-none');
-      
-      // posts
-      $("#navbar-posts").removeClass('d-inline');
-      $("#navbar-posts").addClass('d-none');
-
-      // post add
-      $("#navbar-post-add").removeClass('d-inline');
-      $("#navbar-post-add").addClass('d-none');
-
-      // user
-      $("#navbar-user").removeClass('d-inline');
-      $("#navbar-user").addClass('d-none');
-
-      // signout
-      $("#navbar-signout").removeClass('d-inline');
-      $("#navbar-signout").addClass('d-none');
       
       // register
       $("#navbar-register").removeClass('d-none');
@@ -80,10 +55,6 @@ $(document).ready(function(){
       // signin
       $("#navbar-signin").removeClass('d-none');
       $("#navbar-signin").addClass('d-inline');
-
-      // user name
-      $("#user-name-navbar").text('');
-      */
     }
 
   });

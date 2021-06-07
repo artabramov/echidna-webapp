@@ -13,7 +13,7 @@ $(document).ready(function(){
             }
 
             if(msg.success == "true") {
-              window.location.href = ECHIDNA_URL + '/?page=hubs&hub_status=custom&offset=0';
+              window.location.href = ECHIDNA_URL + '/?page=hub_rows&offset=0';
               
             } else {
               $("#hub-insert-error").removeClass('d-none');

@@ -41,8 +41,8 @@
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/user_restore.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/user_signin.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/user_select.js" crossorigin="anonymous"></script>
-    <script src="<?php echo ECHIDNA_URL ?>/webapp/events/hubs_select.js" crossorigin="anonymous"></script>
+    <script src="<?php echo ECHIDNA_URL ?>/webapp/events/hub_rows.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/hub_insert.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/hub_select.js" crossorigin="anonymous"></script>
-    
+    <script src="<?php echo ECHIDNA_URL ?>/webapp/events/role_insert.js" crossorigin="anonymous"></script>
     
