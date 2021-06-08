@@ -8,6 +8,7 @@
         <thead>
             <tr>
             <th scope="col">hub_id</th>
+            <th scope="col">create_date</th>
             <th scope="col">hub_name</th>
             <th scope="col">roles_count</th>
             <th scope="col">posts_count</th>
@@ -23,6 +24,6 @@
 </div>
 
 <script>
-hub_sequence(<?php echo $offset; ?>);
+hub_rows(<?php echo $offset; ?>);
 </script>
 

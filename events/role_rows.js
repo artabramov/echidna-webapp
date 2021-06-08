@@ -1,8 +1,8 @@
-function hub_rows(offset) {
+function role_rows(hub_id, offset) {
 
   $.ajax({
     method: "GET",
-    url: ECHIDNA_URL + "/hubs?user_token=" + $.cookie("user-token") + "&offset=" + offset,
+    url: ECHIDNA_URL + "/roles?user_token=" + $.cookie("user-token") + "&offset=" + offset,
     dataType: 'json'
 
   }).done(function( msg ) {
@@ -13,6 +13,7 @@ function hub_rows(offset) {
 
     if(msg.success == "true") {
 
+      /*
       $("#hubs-table tbody").empty();
 
       msg.rows.forEach(function(row) {
@@ -20,6 +21,7 @@ function hub_rows(offset) {
       });
 
       pagination(offset, ECHIDNA_ROWS_ON_PAGE, msg.roles_count, ECHIDNA_URL + '/?page=hub_rows&offset=');
+      */
 
     } else {
     }
