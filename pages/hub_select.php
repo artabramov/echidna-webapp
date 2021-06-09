@@ -7,7 +7,22 @@
 
 </div>
 
+<!-- hubs list -->
+<table id="page-hub-select-roles-table" class="table">
+    <thead>
+        <tr>
+        <th scope="col">create_date</th>
+        <th scope="col">user_id</th>
+        <th scope="col">user_role</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<!-- pagination -->
+<?php require_once(__DIR__ . '/../pagination.php'); ?>
+
 <script>
-    hub_select(<?php echo $hub_id; ?>);
+    hub_select(<?php echo $hub_id; ?>, <?php echo $offset; ?>);
 </script>
 
