@@ -1,14 +1,13 @@
+<!-- page title -->
 <div>
-    <h1 id="page-hub-select-title" class="d-inline"></h1>
-
+    <h1 id="page-hub-title" class="d-inline"></h1>
     <button href="#" class="btn btn-outline-primary" data-toggle="modal" data-target="#role-insert-modal">Insert role</button>
     <button href="#" class="btn btn-outline-primary">Leave hub</button>
     <button href="#" class="btn btn-outline-danger">Delete hub</button>
-
 </div>
 
-<!-- hubs list -->
-<table id="page-hub-select-roles-table" class="table">
+<!-- roles list list -->
+<table id="page-hub-table-roles" class="table">
     <thead>
         <tr>
         <th scope="col">create_date</th>
@@ -22,6 +21,7 @@
 <!-- pagination -->
 <?php require_once(__DIR__ . '/../pagination.php'); ?>
 
+<!-- page event -->
 <script>
     hub_select(<?php echo $hub_id; ?>, <?php echo $offset; ?>);
 </script>

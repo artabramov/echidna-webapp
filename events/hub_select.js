@@ -14,16 +14,16 @@ function hub_select(hub_id, offset) {
     if(msg.success == "true") {
 
       // hub name
-      $("#page-hub-select-title").text(msg.hub.hub_name);
+      $("#page-hub-title").text(msg.hub.hub_name);
 
       // roles
-      $("#page-hub-select-roles-table tbody").empty();
+      $("#page-hub-table-roles tbody").empty();
       msg.roles.forEach(function(row) {
-          $('#page-hub-select-roles-table').find('tbody').append('<tr><td>' + row.create_date + '</td><td>' + row.user_id + '</td><td>' + row.user_role + '</td></tr>');
+          $('#page-hub-table-roles').find('tbody').append('<tr><td>' + row.create_date + '</td><td>' + row.user_id + '</td><td><a href="#" class="modal-role-update link" data-toggle="modal" data-target="#modal-role-update" data-id="' + row.id + '">' + row.user_role + '</a></td></tr>');
       });
 
       // pagination
-      pagination(offset, ECHIDNA_ROWS_ON_PAGE, msg.roles_count, ECHIDNA_URL + '/?page=hub_select&hub_id=' + hub_id + '&offset=');
+      pagination(offset, ECHIDNA_ROWS_ON_PAGE, msg.roles_count, ECHIDNA_URL + '/?page=hub&hub_id=' + hub_id + '&offset=');
 
     } else {
     }

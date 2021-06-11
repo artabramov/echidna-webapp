@@ -16,6 +16,7 @@ define( 'ECHIDNA_ROWS_ON_PAGE', 3 );
 <?php require_once(__DIR__ . '/modals/user_signin.php'); ?>
 <?php require_once(__DIR__ . '/modals/hub_insert.php'); ?>
 <?php require_once(__DIR__ . '/modals/role_insert.php'); ?>
+<?php require_once(__DIR__ . '/modals/role_update.php'); ?>
 
 <!-- pages -->
 <?php //require_once(__DIR__ . '/pages/hello.php'); ?>
