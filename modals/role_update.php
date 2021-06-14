@@ -14,15 +14,21 @@
         <!-- error -->
         <div id="role-update-error" class="alert alert-secondary d-none" role="alert"></div>
 
-        <!-- role id -->
+        <!-- hub id -->
         <div class="form-group">
-            <label for="role-update-role-id">Role id</label>
-            <input id="role-update-role-id" type="text" class="form-control" aria-describedby="role-update-role-id-help" value="<?php echo $hub_id; ?>" placeholder="" readonly>
+            <label for="role-update-hub-id">Hub id</label>
+            <input id="role-update-hub-id" type="text" class="form-control" aria-describedby="role-update-hub-id-help" value="" placeholder="" readonly>
+        </div>
+
+        <!-- user id -->
+        <div class="form-group">
+            <label for="role-update-user-id">User id</label>
+            <input id="role-update-user-id" type="text" class="form-control" aria-describedby="role-update-user-id-help" value="" placeholder="" readonly>
         </div>
 
         <!-- user role: admin -->
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="user-role" id="user-role-admin" value="admin" checked>
+          <input class="form-check-input" type="radio" name="role-update-user-role" id="role-update-user-role-admin" value="admin">
           <label class="form-check-label" for="user-role-admin">
             admin
             <small class="form-text text-muted">
@@ -34,7 +40,7 @@
 
         <!-- user role: author -->
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="user-role" id="user-role-author" value="author">
+          <input class="form-check-input" type="radio" name="role-update-user-role" id="role-update-user-role-author" value="author">
           <label class="form-check-label" for="user-role-author">
             author
             <small class="form-text text-muted">
@@ -45,7 +51,7 @@
 
         <!-- user role: editor -->
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="user-role" id="user-role-editor" value="editor">
+          <input class="form-check-input" type="radio" name="role-update-user-role" id="role-update-user-role-editor" value="editor">
           <label class="form-check-label" for="user-role-editor">
             editor
             <small class="form-text text-muted">
@@ -56,7 +62,7 @@
 
         <!-- user role: reader -->
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="user-role" id="user-role-reader" value="reader">
+          <input class="form-check-input" type="radio" name="role-update-user-role" id="role-update-user-role-reader" value="reader">
           <label class="form-check-label" for="user-role-reader">
             reader
             <small class="form-text text-muted">

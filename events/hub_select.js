@@ -19,7 +19,7 @@ function hub_select(hub_id, offset) {
       // roles
       $("#page-hub-table-roles tbody").empty();
       msg.roles.forEach(function(row) {
-          $('#page-hub-table-roles').find('tbody').append('<tr><td>' + row.create_date + '</td><td>' + row.user_id + '</td><td><a href="#" class="modal-role-update link" data-toggle="modal" data-target="#modal-role-update" data-id="' + row.id + '">' + row.user_role + '</a></td></tr>');
+          $('#page-hub-table-roles').find('tbody').append('<tr><td>' + row.create_date + '</td><td>' + row.user_id + '</td><td><a href="#" class="modal-role-update link" data-toggle="modal" data-target="#modal-role-update" data-hub-id="' + msg.hub.id + '" data-user-id="' + row.user_id + '" data-user-role="' + row.user_role + '">' + row.user_role + '</a></td></tr>');
       });
 
       // pagination
