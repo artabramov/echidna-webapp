@@ -1,9 +1,9 @@
+<!-- page title -->
 <div>
-    <h1 id="page-user-title"></h1>
-    <p>Create date: <span id="page-user-create-date"></span></p>
+    <h1 id="page-user-title" class="d-inline"></h1>
 </div>
 
+<!-- event -->
 <script>
-user_select(<?php echo $user_id; ?>);
+    user_select(<?php echo $_GET['user_id']; ?>);
 </script>
-

@@ -22,29 +22,28 @@
 
     <!-- echidna consts -->
     <script>
-    const ECHIDNA_DEBUG = true;
+    const ECHIDNA_DEBUG = <?php echo json_encode(ECHIDNA_DEBUG); ?>;
+    const ECHIDNA_API = '<?php echo ECHIDNA_API ?>';
     const ECHIDNA_URL = '<?php echo ECHIDNA_URL ?>';
-    const ECHIDNA_ROWS_ON_PAGE = <?php echo ECHIDNA_ROWS_ON_PAGE ?>;
     </script>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery first, then Popper, then Bootstrap, then App -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-    <script src="<?php echo ECHIDNA_URL ?>/webapp/events/onload.js" crossorigin="anonymous"></script>
-    <script src="<?php echo ECHIDNA_URL ?>/webapp/events/modal.js" crossorigin="anonymous"></script>
-    <script src="<?php echo ECHIDNA_URL ?>/webapp/events/pagination.js" crossorigin="anonymous"></script>
+
+    <script src="<?php echo ECHIDNA_URL ?>/webapp/pagination.js" crossorigin="anonymous"></script>
+    <script src="<?php echo ECHIDNA_URL ?>/webapp/events/user_auth.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/user_signout.js" crossorigin="anonymous"></script>
+    <script src="<?php echo ECHIDNA_URL ?>/webapp/events/user_remind.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/user_register.js" crossorigin="anonymous"></script>
-    <script src="<?php echo ECHIDNA_URL ?>/webapp/events/user_restore.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/user_signin.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/user_select.js" crossorigin="anonymous"></script>
-    <script src="<?php echo ECHIDNA_URL ?>/webapp/events/hub_rows.js" crossorigin="anonymous"></script>
+    <script src="<?php echo ECHIDNA_URL ?>/webapp/events/hub_query.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/hub_insert.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/hub_select.js" crossorigin="anonymous"></script>
-    <script src="<?php echo ECHIDNA_URL ?>/webapp/events/role_insert.js" crossorigin="anonymous"></script>
-    <script src="<?php echo ECHIDNA_URL ?>/webapp/events/role_shown.js" crossorigin="anonymous"></script>
-    <script src="<?php echo ECHIDNA_URL ?>/webapp/events/role_update.js" crossorigin="anonymous"></script>
+    <script src="<?php echo ECHIDNA_URL ?>/webapp/events/post_query.js" crossorigin="anonymous"></script>
+    <script src="<?php echo ECHIDNA_URL ?>/webapp/events/post_insert.js" crossorigin="anonymous"></script>
+    
 

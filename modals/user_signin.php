@@ -1,4 +1,4 @@
-<div id="modal-signin" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-signin-title" aria-hidden="true">
+<div id="modal-user-signin" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-user-signin-title" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
 
@@ -12,27 +12,26 @@
       <div class="modal-body">
 
         <!-- error -->
-        <div id="modal-signin-error" class="alert alert-secondary d-none" role="alert"></div>
+        <div id="modal-user-signin-error" class="alert alert-secondary d-none" role="alert"></div>
 
         <!-- user email -->
         <div class="form-group">
-          <label for="modal-signin-user-email">Email address</label>
-          <input id="modal-signin-user-email" type="text" class="form-control" aria-describedby="modal-signin-user-email-help" placeholder="">
-          <small id="modal-signin-user-pass-help" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            <label for="modal-user-signin-user-email">Email address</label>
+            <input id="modal-user-signin-user-email" type="text" class="form-control" aria-describedby="modal-user-signin-user-email-help" placeholder="">
+            <small class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
 
         <!-- user pass -->
-        <div id="modal-signin-user-pass-group" class="form-group d-none">
-          <label for="modal-signin-user-pass">One-time pass</label>
-          <input id="modal-signin-user-pass" class="form-control" type="text" placeholder="">
+        <div class="form-group">
+          <label for="modal-user-signin-user-pass">One-time pass</label>
+          <input id="modal-user-signin-user-pass" type="text" class="form-control" aria-describedby="modal-user-signin-user-pass-help" placeholder="">
         </div>
-
+        
       </div>
 
       <!-- modal footer -->
       <div class="modal-footer">
-        <button id="modal-signin-restore" type="button" class="btn btn-dark">Restore</button>
-        <button id="modal-signin-done" type="button" class="btn btn-dark d-none">Signin</button>
+        <button id="modal-user-signin-submit" type="button" class="btn btn-dark">Done</button>
       </div>
 
     </div>

@@ -4,7 +4,7 @@ $(document).ready(function(){
 
     $.ajax({
         method: "PUT",
-        url: ECHIDNA_URL + "/token?user_token=" + $.cookie("user-token"),
+        url: ECHIDNA_API + "token?user_token=" + $.cookie("user-token"),
         dataType: 'json'
 
     }).done(function( msg ) {
@@ -15,7 +15,7 @@ $(document).ready(function(){
 
       if(msg.success == 'true') {
         $.cookie("user-token", '');
-        window.location.href = ECHIDNA_URL + '/?page=hello';
+        window.location.href = ECHIDNA_URL + '?page=hello';
       }
 
     });

@@ -1,41 +1,35 @@
 $(document).ready(function(){
-  
-  $("#modal-register-done").click(function(){
-    user_email = $("#modal-register-user-email").val();
-    user_name = $("#modal-register-user-name").val();
+
+  $("#modal-user-register-submit").click(function(){
 
     $.ajax({
       method: "POST",
-      url: ECHIDNA_URL + "/user?user_email=" + user_email + "&user_name=" + user_name,
+      url: ECHIDNA_API + "user/?user_email=" + $("#modal-user-register-user-email").val() + "&user_name=" + $("#modal-user-register-user-name").val() + "&user_phone=" + $("#modal-user-register-user-phone").val(),
       dataType: 'json'
 
-    }).done(function( msg ) {
+    }).done(function(msg) {
 
       if(ECHIDNA_DEBUG) {
         console.log(msg);
       }
 
-      if(msg.success == "true") {
-        modal('registered');
+      if(msg.success == 'true') {
+        // -- clear error --
+        $("#modal-user-register-error").removeClass('d-block');
+        $("#modal-user-register-error").addClass('d-none');
+        $("#modal-user-register-error").text("");
 
-        // hide error
-        $("#modal-register-error").removeClass('d-block');
-        $("#modal-register-error").addClass('d-none');
-        $("#modal-register-error").text("");
+        // -- modals --
+        $('#modal-user-register').modal('hide');
+        $('#modal-user-register-done').modal('show');
 
-        // clear form
-        $("#modal-register-user-email").val("");
-        $("#modal-register-user-name").val("");
+      } else {
+        // -- error --
+        $("#modal-user-register-error").removeClass('d-none');
+        $("#modal-user-register-error").addClass('d-block');
+        $("#modal-user-register-error").text(msg.error);
+      }
 
-        } else {
-
-          // show error
-          $("#modal-register-error").removeClass('d-none');
-          $("#modal-register-error").addClass('d-block');
-          $("#modal-register-error").text(msg.error);
-
-        }
     });
-});
-
+  });
 });

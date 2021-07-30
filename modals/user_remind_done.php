@@ -1,10 +1,10 @@
-<div id="modal-registered" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-registered-title" aria-hidden="true">
+<div id="modal-user-remind-done" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-user-remind-done-title" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
 
       <!-- modal header -->
       <div class="modal-header">
-        <h5 class="modal-title">Done</h5>
+        <h5 class="modal-title">Remind done</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -13,7 +13,7 @@
 
         <!-- text -->
         <div class="form-group">
-            Registration finished. Check email for one-time password and signin.
+            Remind finished. Check email for one-time password and signin.
         </div>
 
       </div>
