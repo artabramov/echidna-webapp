@@ -3,6 +3,7 @@
     <h1 id="page-posts-title" class="d-inline"></h1>
     <button href="#" data-toggle="modal" data-target="#modal-post-insert" class="btn btn-outline-primary">Post insert</button>
     <button href="#" data-toggle="modal" data-target="#modal-role-insert" class="btn btn-outline-primary">Role insert</button>
+    <button href="#" class="btn btn-outline-primary">Hub update</button>
     <button href="#" class="btn btn-outline-primary">Hub delete</button>
 </div>
 
