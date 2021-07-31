@@ -19,7 +19,9 @@ require_once(__DIR__ . '/modals/user_remind.php');
 require_once(__DIR__ . '/modals/user_remind_done.php');
 require_once(__DIR__ . '/modals/user_signin.php');
 require_once(__DIR__ . '/modals/hub_insert.php');
+require_once(__DIR__ . '/modals/hub_delete.php');
 require_once(__DIR__ . '/modals/post_insert.php');
+require_once(__DIR__ . '/modals/role_insert.php');
 
 /*
 require_once(__DIR__ . '/modals/user_register_done.php');

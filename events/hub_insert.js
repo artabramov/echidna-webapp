@@ -14,7 +14,7 @@ $(document).ready(function(){
       }
 
       if(msg.success == 'true') {
-        window.location.href = ECHIDNA_URL + '?page=posts&hub_id=' + msg.hub_id + '&post_status=todo&offset=0';
+        window.location.href = ECHIDNA_URL + '?page=hubs&offset=0';
 
       } else {
         // -- error --

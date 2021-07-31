@@ -1,6 +1,8 @@
 function post_query(hub_id, post_status, offset) {
 
   $("#modal-post-insert-hub-id").val(hub_id);
+  $("#modal-role-insert-hub-id").val(hub_id);
+  $("#modal-hub-delete-hub-id").val(hub_id);
 
   $.ajax({
       method: "GET",
