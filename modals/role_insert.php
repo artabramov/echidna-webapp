@@ -22,11 +22,25 @@
         </div>
 
         <!-- user email -->
+        <!--
         <div class="form-group">
             <label for="modal-role-insert-user-email">User email</label>
             <input id="modal-role-insert-user-email" type="text" class="form-control" aria-describedby="modal-role-insert-user-email-help" placeholder="">
             <small class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
+        -->
+
+        <!-- user email -->
+        <div class="form-group">
+          <label for="modal-role-insert-user-email">User email</label>
+          <input id="modal-role-insert-user-email" list="modal-role-insert-user-search" class="form-control" aria-describedby="modal-role-insert-user-email-help" placeholder="">
+          <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        
+        <datalist id="modal-role-insert-user-search">
+          <option value="14november@mail.ru">art abramov</option>
+          <option value="notdepot@gmail.com">not depot</option>
+        </datalist>
 
         <!-- role status: admin -->
         <div class="form-check">
@@ -60,25 +74,6 @@
             </small>
           </label>
         </div>
-
-
-
-        <!-- tmp -->
-        <div class="form-group">
-          <label for="modal-role-insert-user-email">User email</label>
-          <input id="modal-role-insert-user-email" list="cocktail" class="form-control" aria-describedby="modal-role-insert-user-email-help" placeholder="">
-          <small class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        
-      <datalist id="cocktail">
-        <option value="14november@mail.ru">art abramov</option>
-        <option value="notdepot@gmail.com">not depot</option>
-      </datalist>
-
-
-
-
-
 
       </div>
 
