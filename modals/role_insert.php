@@ -37,9 +37,7 @@
           <small class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
         
-        <datalist id="modal-role-insert-user-search">
-          <!--<option value="no@no.com">no no</option>-->
-        </datalist>
+        <datalist id="modal-role-insert-user-search"></datalist>
 
         <!-- role status: admin -->
         <div class="form-check">
