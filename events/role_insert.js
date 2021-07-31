@@ -1,37 +1,45 @@
 $(document).ready(function(){
 
   // -- pause --
-
-  /*
-  var search, timer;
-  $('#search1').on('keyup', function () {
-      search = $('#search1').val();
-      $('#result').html('Min 3 characters');
-      if(search.length > 2){ //min char number 3
-    clearTimeout(timer);
-          $('#result').html('loading..');
-    timer =	setTimeout(function () {
-            $('#result').html(search);
-    }, 2000); // time to wait before executing, 2000 milli seconds here
-     }
-  });
-  */
-
   var search, timer;
   $('#modal-role-insert-user-email').on('keyup', function () {
+
     search = $('#modal-role-insert-user-email').val();
     if(search.length > 2){
-      clearTimeout(timer);
-      
 
-      timer =	setTimeout(function () {
-        console.log(search);
-      }, 1000);
+      var re = /^\w+([-+.'][^\s]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+      var is_email = re.test($("#modal-role-insert-user-email").val()); // This return result in Boolean type
+
+      if(!is_email) {
+
+        clearTimeout(timer);
+        timer =	setTimeout(function () {
+
+          $.ajax({
+            method: "GET",
+            url: ECHIDNA_API + "search/user/" + search + "?user_token=" + $.cookie("user-token"),
+            dataType: 'json'
+      
+          }).done(function(msg) {
+      
+            if(ECHIDNA_DEBUG) {
+              console.log(msg);
+            }
+
+            if(msg.success == 'true') {
+              $("#modal-role-insert-user-search").empty();
+              
+              msg.users.forEach(function(row) {
+                $("#modal-role-insert-user-search").append($("<option>").attr('value', row.user_email).text(row.user_name));
+              });
+                }
+          });
+        }, 1000);
+
+      }
 
     }
   });
-
-  
 
   // -- submit --
   $("#modal-role-insert-submit").click(function(){

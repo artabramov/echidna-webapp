@@ -38,14 +38,13 @@
         </div>
         
         <datalist id="modal-role-insert-user-search">
-          <option value="14november@mail.ru">art abramov</option>
-          <option value="notdepot@gmail.com">not depot</option>
+          <!--<option value="no@no.com">no no</option>-->
         </datalist>
 
         <!-- role status: admin -->
         <div class="form-check">
           <input class="form-check-input" type="radio" name="modal-role-insert-role-status" id="modal-role-insert-role-status-admin" value="admin">
-          <label class="form-check-label" for="user-role-admin">
+          <label class="form-check-label" for="modal-role-insert-role-status-admin">
             admin
             <small class="form-text text-muted">
               Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
@@ -56,7 +55,7 @@
         <!-- role status: editor -->
         <div class="form-check">
           <input class="form-check-input" type="radio" name="modal-role-insert-role-status" id="modal-role-insert-role-status-editor" value="editor" checked>
-          <label class="form-check-label" for="user-role-admin">
+          <label class="form-check-label" for="modal-role-insert-role-status-editor">
             editor
             <small class="form-text text-muted">
               Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
@@ -67,7 +66,7 @@
         <!-- role status: reader -->
         <div class="form-check">
           <input class="form-check-input" type="radio" name="modal-role-insert-role-status" id="modal-role-insert-role-status-reader" value="reader">
-          <label class="form-check-label" for="user-role-admin">
+          <label class="form-check-label" for="modal-role-insert-role-status-reader">
             reader
             <small class="form-text text-muted">
               Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
