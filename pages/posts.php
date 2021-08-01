@@ -1,11 +1,27 @@
 <!-- page title -->
 <div>
     <h1 id="page-posts-title" class="d-inline"></h1>
-    <button href="#" data-toggle="modal" data-target="#modal-post-insert" class="btn btn-outline-primary">Post insert</button>
-    <button href="#" data-toggle="modal" data-target="#modal-role-insert" class="btn btn-outline-primary">Role insert</button>
-    <button class="btn btn-outline-primary">Hub update</button>
-    <button data-toggle="modal" data-target="#modal-hub-delete" class="btn btn-outline-primary">Hub delete</button>
-    <button type="button" class="btn btn-link">Roles list</button>
+    
+    <!--<button class="btn btn-outline-primary">Hub update</button>-->
+    <!--<button data-toggle="modal" data-target="#modal-hub-delete" class="btn btn-outline-primary">Hub delete</button>-->
+    <!--<a type="button" class="btn btn-link" href="<?php echo ECHIDNA_URL; ?>?page=roles&hub_id=<?php echo $_GET['hub_id']; ?>&offset=0">Manage roles</a>-->
+    <!--<button type="button" class="btn btn-link">Download hub</button>-->
+
+    <button href="#" data-toggle="modal" data-target="#modal-post-insert" class="btn btn-outline-primary"><i class="material-icons">add_circle_outline</i> Post insert</button>
+
+    <div class="dropdown d-inline">
+        <button role="button" type="button" class="btn btn-link more" data-toggle="dropdown" id="dropdownMenuButton"> <i class="material-icons">more_horiz</i></button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modal-hub-delete">Hub delete</a>
+            <a class="dropdown-item" href="#">Hub update</a>
+            <a class="dropdown-item" href="<?php echo ECHIDNA_URL; ?>?page=roles&hub_id=<?php echo $_GET['hub_id']; ?>&offset=0">Manage roles</a>
+        </div>
+    </div>
+
+    
+
+    
+
 </div>
 
 <!-- posts filter -->

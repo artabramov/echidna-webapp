@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.more {
+    text-decoration:none !important;
+}
+
 .align_center {
     position: relative;
     width: 100%;
