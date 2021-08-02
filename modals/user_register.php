@@ -27,20 +27,43 @@
             <input id="modal-user-register-user-name" class="form-control" type="text" placeholder="">
         </div>
 
-        <!-- user phone -->
+        <!-- user phone collapse -->
         <div class="form-group">
-            <label for="modal-user-register-user-phone">Phone</label>
-            <input id="modal-user-register-user-phone" type="text" class="form-control" aria-describedby="modal-user-register-user-phone-help" placeholder="">
-            <small class="form-text text-muted">We'll never share your phone with anyone else.</small>
+            <a href="#" id="exampleCheck1" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Set user phone</a>
+        </div>
+
+        <!-- user phone -->
+        <div class="collapse" id="collapseExample">
+          <div class="form-group">
+              <label for="modal-user-register-user-phone">User phone</label>
+              <input id="modal-user-register-user-phone" type="text" class="form-control" aria-describedby="modal-user-register-user-phone-help" placeholder="">
+              <small class="form-text text-muted">We'll never share your phone with anyone else.</small>
+          </div>          
+        </div>
+
+        <!-- some text -->
+        <div class="form-check">
+          <input type="checkbox"  class="form-check-input" id="modal-user-register-checkbox">
+          <label class="form-check-label" for="modal-user-register-checkbox">I agree with the <a href="#">rules</a>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</label>
         </div>
 
       </div>
 
       <!-- modal footer -->
       <div class="modal-footer">
-        <button id="modal-user-register-submit" type="button" class="btn btn-dark">Done</button>
+        <button id="modal-user-register-submit" type="button" class="btn btn-dark" disabled>Done</button>
       </div>
 
     </div>
   </div>
 </div>
+
+<script>
+  $("#modal-user-register-checkbox").click(function(){
+    if ($('#modal-user-register-checkbox').prop('checked')) {
+      $('#modal-user-register-submit').prop('disabled', false);
+    } else {
+      $('#modal-user-register-submit').prop('disabled', true);
+    }
+  });
+</script>

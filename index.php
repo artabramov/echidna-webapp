@@ -22,6 +22,7 @@ require_once(__DIR__ . '/modals/hub_insert.php');
 require_once(__DIR__ . '/modals/hub_delete.php');
 require_once(__DIR__ . '/modals/post_insert.php');
 require_once(__DIR__ . '/modals/role_insert.php');
+require_once(__DIR__ . '/modals/role_update.php');
 
 /*
 require_once(__DIR__ . '/modals/user_register_done.php');

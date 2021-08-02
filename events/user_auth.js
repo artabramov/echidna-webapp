@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+
+
   $.ajax({
     method: "POST",
     url: ECHIDNA_API + "token/?user_token=" + $.cookie("user-token"),
@@ -53,4 +55,5 @@ $(document).ready(function(){
     }
 
   });
+
 });
