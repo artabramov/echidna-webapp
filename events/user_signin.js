@@ -14,7 +14,11 @@ $(document).ready(function(){
       }
 
       if(msg.success == 'true') {
-        $.cookie("user-token", msg.user.user_token);
+
+        $.cookie("user-token", msg.user.user_token, { expires : 365, path: '/' });
+        $.cookie("user-id", msg.user.id, { expires : 365, path: '/' });
+        $.cookie("user-name", msg.user.user_name, { expires : 365, path: '/' });
+
         window.location.href = ECHIDNA_URL + '?page=hello';
       }
 

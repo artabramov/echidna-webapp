@@ -52,6 +52,5 @@
 
 <!-- event -->
 <script>
-    hub_select(<?php echo $_GET['hub_id']; ?>);
     post_query(<?php echo $_GET['hub_id']; ?>, '<?php echo $_GET['post_status']; ?>', <?php echo $_GET['offset']; ?>);
 </script>

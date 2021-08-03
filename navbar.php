@@ -57,3 +57,46 @@
 
   </div>
 </nav>
+
+<script>
+
+    if(typeof $.cookie("user-id") != 'undefined' && typeof $.cookie("user-token") != 'undefined') {
+
+      // -- users --
+      $("#navbar-users").removeClass('d-none');
+      $("#navbar-users").addClass('d-inline');
+
+      // -- hubs --
+      $("#navbar-hubs").removeClass('d-none');
+      $("#navbar-hubs").addClass('d-inline');
+
+      // -- posts --
+      $("#navbar-posts").removeClass('d-none');
+      $("#navbar-posts").addClass('d-inline');
+
+      // -- search --
+      $("#navbar-posts-search").removeClass('d-none');
+      $("#navbar-posts-search").addClass('d-inline');
+
+      // -- user --
+      $("#navbar-user-user-name").text($.cookie("user-name"));
+      $("#navbar-user").removeClass('d-none');
+      $("#navbar-user").addClass('d-inline');
+      $("#navbar-user-select").attr("href", ECHIDNA_URL + "?page=user&user_id=" + $.cookie("user-id"));
+
+    } else {
+      
+      // -- register --
+      $("#navbar-user-register").removeClass('d-none');
+      $("#navbar-user-register").addClass('d-inline');
+
+      // -- remind --
+      $("#navbar-user-remind").removeClass('d-none');
+      $("#navbar-user-remind").addClass('d-inline');
+
+      // -- signin --
+      $("#navbar-user-signin").removeClass('d-none');
+      $("#navbar-user-signin").addClass('d-inline');
+    }
+
+</script>

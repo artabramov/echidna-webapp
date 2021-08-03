@@ -34,7 +34,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <script src="<?php echo ECHIDNA_URL ?>/webapp/pagination.js" crossorigin="anonymous"></script>
-    <script src="<?php echo ECHIDNA_URL ?>/webapp/events/user_auth.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/user_signout.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/user_remind.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/user_register.js" crossorigin="anonymous"></script>
@@ -42,7 +41,6 @@
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/user_select.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/hub_query.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/hub_insert.js" crossorigin="anonymous"></script>
-    <script src="<?php echo ECHIDNA_URL ?>/webapp/events/hub_select.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/hub_delete.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/post_query.js" crossorigin="anonymous"></script>
     <script src="<?php echo ECHIDNA_URL ?>/webapp/events/post_insert.js" crossorigin="anonymous"></script>
