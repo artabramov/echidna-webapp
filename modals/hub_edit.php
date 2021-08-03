@@ -17,14 +17,14 @@
         <!-- hub id -->
         <div class="form-group">
           <label for="modal-hub-edit-hub-id">Hub id</label>
-          <input id="modal-hub-edit-hub-id" type="text" class="form-control" aria-describedby="modal-hub-deleditete-hub-id-help" placeholder="" readonly>
+          <input id="modal-hub-edit-hub-id" type="text" class="form-control" aria-describedby="modal-hub-delete-hub-id-help" placeholder="" readonly>
           <small class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
 
         <!-- hub name -->
         <div class="form-group">
           <label for="modal-hub-edit-hub-name">Hub name</label>
-          <input id="modal-hub-edit-hub-name" type="text" class="form-control" aria-describedby="modal-hub-deleditete-hub-name-help" placeholder="">
+          <input id="modal-hub-edit-hub-name" type="text" class="form-control" aria-describedby="modal-hub-delete-hub-name-help" placeholder="">
           <small class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
 

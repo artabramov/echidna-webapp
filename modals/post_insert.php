@@ -28,6 +28,13 @@
             <small class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
 
+        <!-- post tags -->
+        <div class="form-group">
+            <label for="modal-post-insert-post-tags">Post tags</label>
+            <input id="modal-post-insert-post-tags" type="text" class="form-control" aria-describedby="modal-post-insert-post-tags-help" placeholder="">
+            <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+
         <!-- post status: todo -->
         <div class="form-check">
           <input class="form-check-input" type="radio" name="modal-post-insert-post-status" id="modal-post-insert-post-status-todo" value="todo" checked>
@@ -60,8 +67,6 @@
             </small>
           </label>
         </div>
-
-
 
       </div>
 

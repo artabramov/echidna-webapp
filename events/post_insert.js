@@ -4,7 +4,7 @@ $(document).ready(function(){
 
     $.ajax({
       method: "POST",
-      url: ECHIDNA_API + "post/?user_token=" + $.cookie("user-token") + "&hub_id=" + $("#modal-post-insert-hub-id").val() + "&post_title=" + $("#modal-post-insert-post-title").val() + "&post_status=" + $("input[name='modal-post-insert-post-status']:checked").val(),
+      url: ECHIDNA_API + "post/?user_token=" + $.cookie("user-token") + "&hub_id=" + $("#modal-post-insert-hub-id").val() + "&post_title=" + $("#modal-post-insert-post-title").val() + "&post_tags=" + $("#modal-post-insert-post-tags").val() + "&post_status=" + $("input[name='modal-post-insert-post-status']:checked").val(),
       dataType: 'json'
 
     }).done(function(msg) {
