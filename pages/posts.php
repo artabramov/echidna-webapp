@@ -9,7 +9,7 @@
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#modal-hub-delete">Hub delete</a>
             <a class="dropdown-item" href="#">Hub update</a>
-            <a class="dropdown-item" href="<?php echo ECHIDNA_URL; ?>?page=roles&hub_id=<?php echo $_GET['hub_id']; ?>&offset=0">Roles list</a>
+            <a class="dropdown-item" href="<?php echo ECHIDNA_URL; ?>?page=roles&hub_id=<?php echo $_GET['hub_id']; ?>&offset=0">Roles manage</a>
         </div>
     </div>
 
