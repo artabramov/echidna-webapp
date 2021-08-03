@@ -7,36 +7,29 @@ $(document).ready(function(){
     search = $('#modal-role-insert-user-email').val();
     if(search.length > 2){
 
-      var re = /^\w+([-+.'][^\s]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
-      var is_email = re.test($("#modal-role-insert-user-email").val()); // This return result in Boolean type
+      clearTimeout(timer);
+      timer =	setTimeout(function () {
 
-      if(!is_email) {
+        $.ajax({
+          method: "GET",
+          url: ECHIDNA_API + "search/user/" + search + "?user_token=" + $.cookie("user-token"),
+          dataType: 'json'
+    
+        }).done(function(msg) {
+    
+          if(ECHIDNA_DEBUG) {
+            console.log(msg);
+          }
 
-        clearTimeout(timer);
-        timer =	setTimeout(function () {
-
-          $.ajax({
-            method: "GET",
-            url: ECHIDNA_API + "search/user/" + search + "?user_token=" + $.cookie("user-token"),
-            dataType: 'json'
-      
-          }).done(function(msg) {
-      
-            if(ECHIDNA_DEBUG) {
-              console.log(msg);
-            }
-
-            if(msg.success == 'true') {
-              $("#modal-role-insert-user-search").empty();
-              
-              msg.users.forEach(function(row) {
-                $("#modal-role-insert-user-search").append($("<option>").attr('value', row.user_email).text(row.user_name));
-              });
-                }
-          });
-        }, 1000);
-
-      }
+          if(msg.success == 'true') {
+            $("#modal-role-insert-user-search").empty();
+            
+            msg.users.forEach(function(row) {
+              $("#modal-role-insert-user-search").append($("<option>").attr('value', row.user_email).text(row.user_name));
+            });
+              }
+        });
+      }, 1000);
 
     }
   });
@@ -56,7 +49,7 @@ $(document).ready(function(){
       }
 
       if(msg.success == 'true') {
-        //window.location.href = ECHIDNA_URL + '?page=posts&hub_id=' + msg.hub_id + '&post_status=todo&offset=0';
+        window.location.href = ECHIDNA_URL + '?page=roles&hub_id=' + $("#modal-role-insert-hub-id").val() + '&offset=0';
 
       } else {
         // -- error --

@@ -63,7 +63,7 @@
 
       <!-- modal footer -->
       <div class="modal-footer">
-        <button id="modal-role-update-submit" type="button" class="btn btn-dark">Done</button>
+        <button id="modal-role-update-submit" type="button" class="btn btn-dark">Update</button>
         <button id="modal-role-update-delete" type="button" class="btn btn-dark">Delete</button>
       </div>
 

@@ -10,7 +10,7 @@
 
       <!-- users -->
       <li id="navbar-users" class="pl-2 nav-item d-none">
-        <a class="nav-link" href="<?php echo ECHIDNA_URL; ?>?page=users">Users</a>
+        <a class="nav-link" href="<?php echo ECHIDNA_URL; ?>?page=users&offset=0">Users</a>
       </li>
 
       <!-- hubs -->

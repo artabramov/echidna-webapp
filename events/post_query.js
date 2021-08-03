@@ -1,8 +1,5 @@
 function post_query(hub_id, post_status, offset) {
 
-  $("#modal-post-insert-hub-id").val(hub_id);
-  $("#modal-hub-delete-hub-id").val(hub_id);
-
   $.ajax({
       method: "GET",
       url: ECHIDNA_API + "posts/?user_token=" + $.cookie("user-token") + "&hub_id=" + hub_id + "&post_status=" + post_status + "&offset=" + offset,
@@ -16,6 +13,12 @@ function post_query(hub_id, post_status, offset) {
 
     if(msg.success == 'true') {
 
+      // modals elements
+      $("#modal-post-insert-hub-id").val(hub_id);
+      $("#modal-hub-edit-hub-id").val(hub_id);
+      $("#modal-hub-edit-hub-name").val(msg.hub.hub_name);
+
+      // page elements
       $("#page-posts-title").text(msg.hub.hub_name);
       $("#page-posts-todo-count").text(msg.hub.todo_count);
       $("#page-posts-doing-count").text(msg.hub.doing_count);

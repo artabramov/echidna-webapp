@@ -1,10 +1,10 @@
 $(document).ready(function(){
 
-  $("#modal-hub-delete-submit").click(function(){
+  $("#modal-hub-edit-submit-delete").click(function(){
 
     $.ajax({
       method: "DELETE",
-      url: ECHIDNA_API + "hub/" + $("#modal-hub-delete-hub-id").val() + "/?user_token=" + $.cookie("user-token"),
+      url: ECHIDNA_API + "hub/" + $("#modal-hub-edit-hub-id").val() + "/?user_token=" + $.cookie("user-token"),
       dataType: 'json'
 
     }).done(function(msg) {
@@ -18,9 +18,9 @@ $(document).ready(function(){
 
       } else {
         // -- error --
-        $("#modal-hub-delete-error").removeClass('d-none');
-        $("#modal-hub-delete-error").addClass('d-block');
-        $("#modal-hub-delete-error").text(msg.error);
+        $("#modal-hub-edit-error").removeClass('d-none');
+        $("#modal-hub-edit-error").addClass('d-block');
+        $("#modal-hub-edit-error").text(msg.error);
       }
 
     });

@@ -14,7 +14,7 @@ $(document).ready(function(){
       }
 
       if(msg.success == 'true') {
-        //window.location.href = ECHIDNA_URL + '?page=hubs&offset=0';
+        window.location.href = ECHIDNA_URL + '?page=roles&hub_id=' + $("#modal-role-update-hub-id").val() + '&offset=0';
 
       } else {
         // -- error --
