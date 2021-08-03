@@ -9,15 +9,15 @@
 </div>
 
 <!-- posts filter -->
-<ul class="nav">
+<ul class="nav nav-pills">
     <li class="nav-item">
-        <a class="nav-link" href="<?php echo ECHIDNA_URL; ?>?page=posts&hub_id=<?php echo $_GET['hub_id']; ?>&post_status=todo&offset=0">Todo <span id="page-posts-todo-count" class="badge badge-pill badge-light"></span></a>
+        <a class="nav-link <?php if($_GET['post_status'] == 'todo') { echo 'active'; } ?>" href="<?php echo ECHIDNA_URL; ?>?page=posts&hub_id=<?php echo $_GET['hub_id']; ?>&post_status=todo&offset=0">Todo <span id="page-posts-todo-count" class="badge badge-pill badge-light"></span></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="<?php echo ECHIDNA_URL; ?>?page=posts&hub_id=<?php echo $_GET['hub_id']; ?>&post_status=doing&offset=0">Doing <span id="page-posts-doing-count" class="badge badge-pill badge-light"></span></a>
+        <a class="nav-link <?php if($_GET['post_status'] == 'doing') { echo 'active'; } ?>" href="<?php echo ECHIDNA_URL; ?>?page=posts&hub_id=<?php echo $_GET['hub_id']; ?>&post_status=doing&offset=0">Doing <span id="page-posts-doing-count" class="badge badge-pill badge-light"></span></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="<?php echo ECHIDNA_URL; ?>?page=posts&hub_id=<?php echo $_GET['hub_id']; ?>&post_status=done&offset=0">Done <span id="page-posts-done-count" class="badge badge-pill badge-light"></span></a>
+        <a class="nav-link <?php if($_GET['post_status'] == 'done') { echo 'active'; } ?>" href="<?php echo ECHIDNA_URL; ?>?page=posts&hub_id=<?php echo $_GET['hub_id']; ?>&post_status=done&offset=0">Done <span id="page-posts-done-count" class="badge badge-pill badge-light"></span></a>
     </li>
 </ul>
 

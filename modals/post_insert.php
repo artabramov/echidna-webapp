@@ -31,7 +31,7 @@
         <!-- post status: todo -->
         <div class="form-check">
           <input class="form-check-input" type="radio" name="modal-post-insert-post-status" id="modal-post-insert-post-status-todo" value="todo" checked>
-          <label class="form-check-label" for="user-role-admin">
+          <label class="form-check-label" for="modal-post-insert-post-status-todo">
             todo
             <small class="form-text text-muted">
               Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
@@ -42,7 +42,7 @@
         <!-- post status: doing -->
         <div class="form-check">
           <input class="form-check-input" type="radio" name="modal-post-insert-post-status" id="modal-post-insert-post-status-doing" value="doing">
-          <label class="form-check-label" for="user-role-admin">
+          <label class="form-check-label" for="modal-post-insert-post-status-doing">
             doing
             <small class="form-text text-muted">
               Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
@@ -53,7 +53,7 @@
         <!-- post status: done -->
         <div class="form-check">
           <input class="form-check-input" type="radio" name="modal-post-insert-post-status" id="modal-post-insert-post-status-done" value="done">
-          <label class="form-check-label" for="user-role-admin">
+          <label class="form-check-label" for="modal-post-insert-post-status-done">
             done
             <small class="form-text text-muted">
               Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
