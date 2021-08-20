@@ -1,43 +1,30 @@
-<?php
-define( 'ECHIDNA_DEBUG', true );
-define( 'ECHIDNA_API', 'http://project.local/api/' );
-define( 'ECHIDNA_URL', 'http://project.local/' );
-define( 'ECHIDNA_TITLE', 'Echidna Docs' );
-?>
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/webapp/favicon.ico">
 
-<!-- header -->
-<?php require_once(__DIR__ . '/header.php'); ?>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-<!-- navbar -->
-<?php require_once(__DIR__ . '/navbar.php'); ?>
+    <!-- jQuery first, then Popper, then Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
-<!-- modals -->
-<?php 
-require_once(__DIR__ . '/modals/user_register.php');
-require_once(__DIR__ . '/modals/user_register_done.php');
-require_once(__DIR__ . '/modals/user_remind.php');
-require_once(__DIR__ . '/modals/user_remind_done.php');
-require_once(__DIR__ . '/modals/user_signin.php');
-require_once(__DIR__ . '/modals/hub_insert.php');
-require_once(__DIR__ . '/modals/hub_edit.php');
-require_once(__DIR__ . '/modals/hub_leave.php');
-require_once(__DIR__ . '/modals/post_insert.php');
-require_once(__DIR__ . '/modals/role_insert.php');
-require_once(__DIR__ . '/modals/role_update.php');
-?>
+    <!-- App -->
+    <script src="/webapp/scripts.js" crossorigin="anonymous"></script>
 
-<!-- page -->
-<?php 
-if(empty($_GET['page'])) {
-    require_once(__DIR__ . '/pages/hello.php'); 
+    <title></title>
+  </head>
+  <body>
+    
 
-} elseif(file_exists(__DIR__ . '/pages/' . $_GET['page'] . '.php')) {
-    require_once(__DIR__ . '/pages/' . $_GET['page'] . '.php'); 
+    <h1>Hello, world!</h1>
 
-} else {
-    require_once(__DIR__ . '/pages/404.php'); 
-}
-?>
 
-<!-- footer -->
-<?php require_once(__DIR__ . '/footer.php'); ?>
+  </body>
+</html>

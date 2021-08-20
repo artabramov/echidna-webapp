@@ -1,0 +1,8 @@
+{
+    "navbar-user-signin": "Войти",
+    "offcanvas-signin-title": "Вход с паролем",
+    "offcanvas-signin-email-label": "Электронная почта",
+    "offcanvas-signin-email-text": "Если у вас еще нет аккаунта, то вы можете",
+    "offcanvas-signin-email-link": "зарегистрироваться",
+    "offcanvas-signin-pass-label": "Одноразовый пароль"
+}

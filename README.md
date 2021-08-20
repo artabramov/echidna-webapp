@@ -1,2 +1,0 @@
-# echidna-webapp
-
