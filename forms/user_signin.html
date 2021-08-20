@@ -1,0 +1,43 @@
+<div id="form-user-signin" class="offcanvas offcanvas-end" tabindex="-1" aria-labelledby="form-user-signin">
+  <div class="offcanvas-header">
+    <h5 id="form-user-signin-title" class="offcanvas-title"></h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+
+    <form>
+
+    <!-- error -->
+    <div id="form-user-signin-error" class="alert alert-danger d-none" role="alert">
+    </div>
+
+    <!-- email -->
+    <div class="form-floating mb-3">
+      <input id="form-user-signin-email" type="email" class="form-control" placeholder=" " disabled>
+      <label id="form-user-signin-email-label" for="form-user-signin-email"></label>
+    </div>
+
+    <!-- pass -->
+    <div class="form-floating mb-3">
+      <input id="form-user-signin-pass" type="text" class="form-control" placeholder=" ">
+      <label id="form-user-signin-pass-label" for="form-user-signin-pass"></label>
+    </div>
+
+    <!-- pass text -->
+    <div class="mb-3 form-text">
+      <span id="form-user-signin-pass-text"></span> 
+      <a id="form-user-signin-pass-link" data-bs-toggle="offcanvas" href="#form-user-remind" aria-controls="form-user-remind"></a>
+    </div>
+
+    <!-- submit -->
+    <button id="form-user-signin-submit" class="btn btn-primary" type="button"></button>
+
+    <!-- spinner -->
+    <div id="form-user-signin-spinner" class="spinner-border spinner-border-sm text-dark d-none" role="status">
+      <span class="visually-hidden">...</span>
+    </div>
+
+  </form>
+
+  </div>
+</div>

@@ -99,24 +99,84 @@
         "365": "Alerts count is incorrect"
     },
 
-    "months": [
-        "January",
-        "February",
-        "March",
-        "April",
-        "May",
-        "June",
-        "July",
-        "August",
-        "September",
-        "October",
-        "November",
-        "December"
-    ],
+    "months": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+    },
 
-    "sizes": ["B", "KiB", "MiB", "GiB", "TiB", "PiB", "EiB", "ZiB", "YiB"],
+    "sizes": {
+        "0": "B", 
+        "1": "KiB", 
+        "2": "MiB", 
+        "3": "GiB", 
+        "4": "TiB", 
+        "5": "PiB", 
+        "6": "EiB", 
+        "7": "ZiB", 
+        "8": "YiB"
+    },
 
-    "app": "Echidna Docs",
+    "navbar": {
+        "users": "Users",
+        "repos": "Repos",
+        "remind": "Remind",
+        "user-update": "Update user",
+        "user-volume": "User volume",
+        "user-signout": "Signout"
+    },
+
+    "form": {
+        "user-register": {
+            "title": "User register",
+            "email-label": "User email",
+            "email-text": "Additional classes can be used to vary this layout on a per-form basis.",
+            "name-label": "User name",
+            "offer-label": "Public offer confirm",
+            "offer-text": "Additional classes can be used to vary this layout on a per-form basis",
+            "offer-link": "public offer",
+            "submit": "Submit"
+        },
+
+        "user-remind": {
+            "title": "User remind",
+            "email-label": "User email",
+            "email-text": "Additional classes can be used to vary this layout on a per-form basis",
+            "email-link": "user register",
+            "submit": "Remind"
+        },
+
+        "user-signin": {
+            "title": "User signin",
+            "email-label": "User email",
+            "pass-label": "User pass",
+            "pass-text": "Additional classes can be used to vary this layout on a per-form basis",
+            "pass-link": "remind pass",
+            "submit": "Submit"
+        },
+
+        "user-update": {
+            "title": "User update",
+            "file-label": "User image",
+            "email-label": "User email",
+            "name-label": "User name",
+            "timezone-label": "User timezone",
+            "create-date-label": "Create date",
+            "submit": "Update"
+        }
+        
+    },
+
+
 
 
 

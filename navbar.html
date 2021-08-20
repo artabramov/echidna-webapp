@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a id="navbar-users" class="nav-link d-none" href="#"></a>
+                </li>
+                <li class="nav-item">
+                    <a id="navbar-repos" class="nav-link d-none" href="#"></a>
+                </li>
+                <li class="nav-item">
+                    <a id="navbar-do" class="nav-link" href="#">Do!</a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item">
+                    <a id="navbar-remind" class="nav-link d-none" data-bs-toggle="offcanvas" href="#form-user-remind" aria-controls="form-user-remind"></a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a id="navbar-user" class="nav-link dropdown-toggle d-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbar-user-dropdown">
+                        <li><a id="navbar-user-update" class="dropdown-item" data-bs-toggle="offcanvas" href="#form-user-update" aria-controls="form-user-update"></a></li>
+                        <li><a id="navbar-user-volume" class="dropdown-item" href="#"></a></li>
+                        <li><a id="navbar-user-signout" class="dropdown-item" href="#"></a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a id="navbar-lang" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                    <ul id="navbar-langs" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a id="navbar-lang-en" class="dropdown-item navbar-lang" href="#">en</a></li>
+                        <li><a id="navbar-lang-ru" class="dropdown-item navbar-lang" href="#">ru</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+            
+        </div>
+    </div>
+</nav>

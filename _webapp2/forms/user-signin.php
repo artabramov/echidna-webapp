@@ -26,7 +26,7 @@
     <!-- pass text -->
     <div class="mb-3 form-text">
       <span id="form-signin-pass-text"></span> 
-      <a if="form-signin-pass-href" href="#"></a>
+      <a if="form-signin-pass-link" href="#"></a>
     </div>
 
     <!-- submit -->
