@@ -19,12 +19,13 @@
         <script src="/webapp/onload.js" crossorigin="anonymous"></script>
         <script src="/webapp/scripts/filesize.js" crossorigin="anonymous"></script>
         <script src="/webapp/scripts/datetime.js" crossorigin="anonymous"></script>
-        <script src="/webapp/events/lang_update.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/user_register.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/user_remind.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/user_signin.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/user_auth.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/user_signout.js" crossorigin="anonymous"></script>
+        <script src="/webapp/events/user_update.js" crossorigin="anonymous"></script>
+        <script src="/webapp/events/thumb_post.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/do.js" crossorigin="anonymous"></script>
 
         <title>Echidna Docs</title>

@@ -13,11 +13,18 @@ $(document).ready(function(){
 
             if(msg.success == 'true') {
                 $.cookie('user-token', msg.user.user_token);
+                var USER_TIMEZONE = msg.user.user_terms.user_timezone;
 
                 // -- show navbar links --
                 $('#navbar-users').removeClass('d-none');
                 $('#navbar-repos').removeClass('d-none');
                 $('#navbar-remind').addClass('d-none');
+
+                // -- user thumb --
+                if(typeof msg.user.user_terms.thumb_path != 'undefined') {
+                    $("#form-user-update-thumb").prop('src', msg.user.user_terms.thumb_path);
+                    $("#form-user-update-thumb").removeClass('d-none');
+                }
 
                 // -- show navbar user --
                 $('#navbar-user').text(msg.user.user_name);
@@ -25,16 +32,17 @@ $(document).ready(function(){
 
                 $('#form-user-update-email').text(msg.user.user_email);
                 $('#form-user-update-name').val(msg.user.user_name);
-                $('#form-user-update-create-date').text(datetime(msg.user.create_date, msg.user.user_terms.user_timezone));
+                $('#form-user-update-bio').val(msg.user.user_terms.user_bio);
+                $('#form-user-update-create-date').text(datetime(msg.user.create_date, USER_TIMEZONE));
 
                 // -- timezones --
                 $.each(APP_TIMEZONES, function(key, value) {
                     $("#form-user-update-timezone").append(new Option(value, value));
                 });
-                $("#form-user-update-timezone").val(msg.user.user_terms.user_timezone).change();
+                $("#form-user-update-timezone").val(USER_TIMEZONE).change();
 
 
-                //const USER_TIMEZONE = msg.user.user_terms.user_timezone;
+                
 
                 /*
                 // -- user --

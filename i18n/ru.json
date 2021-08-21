@@ -31,6 +31,7 @@
         "218": "Premium deleted",
         "219": "Timezone is empty",
         "220": "Timezone is incorrect",
+        "221": "User bio is incorrect",
         "300": "Entity error",
         "301": "Create date is empty",
         "302": "Create date is incorrect",
@@ -128,7 +129,11 @@
 
     "navbar": {
         "users": "Пользователи",
-        "repos": "Репозитории"
+        "repos": "Репозитории",
+        "remind": "Восстановить",
+        "user-update": "Редактировать пользователя",
+        "user-volume": "Объем пользователя",
+        "user-signout": "Выйти"
     }
    
 }
