@@ -15,6 +15,7 @@ $(document).ready(function(){
 
             if(msg.success == 'true') {
                 $.cookie('user-token', '', { expires: -1 });
+                USER_TOKEN = null;
                 //window.location.href = ECHIDNA_URL + '?page=hello';
             }
 

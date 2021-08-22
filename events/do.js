@@ -7,6 +7,7 @@ $(document).ready(function(){
         console.log("USER_TOKEN: " + USER_TOKEN);
         console.log("USER_LANG: " + USER_LANG);
         console.log("I18N: " + I18N);
+        console.log("USER_TIMEZONE: " + USER_TIMEZONE);
     });
 
 });

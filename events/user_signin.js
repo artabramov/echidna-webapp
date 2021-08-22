@@ -19,7 +19,8 @@ $(document).ready(function(){
             }
 
             if(msg.success == 'true') {
-                $.cookie("user-token", msg.user.user_token);
+                $.cookie('user-token', msg.user.user_token);
+                USER_TOKEN = msg.user.user_token;
 
                 // -- clear & hide form --
                 $('#form-user-signin').offcanvas('hide');
