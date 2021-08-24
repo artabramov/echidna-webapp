@@ -18,6 +18,8 @@ $(document).ready(function(){
                 // -- show navbar links --
                 $('#navbar-users').removeClass('d-none');
                 $('#navbar-repos').removeClass('d-none');
+                $('#navbar-uploads').removeClass('d-none');
+                $('#navbar-search').removeClass('d-none');
                 $('#navbar-remind').addClass('d-none');
 
                 // -- user thumb --

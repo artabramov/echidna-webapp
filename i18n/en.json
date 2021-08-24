@@ -130,10 +130,16 @@
     "navbar": {
         "users": "Users",
         "repos": "Repos",
+        "uploads": "Uploads",
         "remind": "Remind",
         "user-update": "Update user",
         "user-volume": "Available volume",
         "user-signout": "Signout"
+    },
+
+    "search": {
+        "placeholder": "Search posts",
+        "submit": "Go"
     },
 
     "form": {

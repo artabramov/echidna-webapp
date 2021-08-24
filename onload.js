@@ -50,6 +50,9 @@ $(document).ready(function(){
             });
         }
 
+        // Navbar search
+        $('#navbar-search').attr('placeholder', I18N['search']['placeholder']);
+
         // Forms
         $.each(I18N['form'], function(parent_key, value) {
             $.each(I18N['form'][parent_key], function(child_key, value) {
