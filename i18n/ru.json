@@ -128,12 +128,17 @@
     },
 
     "navbar": {
-        "users": "Пользователи",
-        "repos": "Репозитории",
-        "remind": "Восстановить",
-        "user-update": "Редактировать пользователя",
-        "user-volume": "Объем пользователя",
+        "users": "Люди",
+        "repos-inline": "Записи",
+        "uploads": "Файлы",
+        "remind": "Войти",
+        "user-update": "Обновить профиль",
+        "user-volume": "Доступное место",
         "user-signout": "Выйти"
+    },
+
+    "search": {
+        "placeholder": "Найти задачи"
     }
    
 }

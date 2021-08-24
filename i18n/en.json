@@ -130,7 +130,7 @@
     "navbar": {
         "users": "Users",
         "repos-inline": "Repos",
-        "uploads": "Uploads",
+        "uploads": "Files",
         "remind": "Remind",
         "user-update": "Update user",
         "user-volume": "Available volume",
@@ -138,8 +138,7 @@
     },
 
     "search": {
-        "placeholder": "Search posts",
-        "submit": "Go"
+        "placeholder": "Search posts"
     },
 
     "form": {
