@@ -29,7 +29,7 @@ $(document).ready(function(){
 
                 // -- user thumb --
                 $("#form-user-update-file").val('');
-                $("#form-user-update-thumb").prop('src', msg.user_term.thumb_path);
+                $("#form-user-update-thumb").prop('src', msg.user_term.thumb_file);
                 $("#form-user-update-thumb").removeClass('d-none');
 
                 // -- hide error --

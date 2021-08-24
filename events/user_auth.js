@@ -23,8 +23,8 @@ $(document).ready(function(){
                 $('#navbar-remind').addClass('d-none');
 
                 // -- user thumb --
-                if(typeof msg.user.user_terms.thumb_path != 'undefined') {
-                    $("#form-user-update-thumb").prop('src', msg.user.user_terms.thumb_path);
+                if(typeof msg.user.user_terms.thumb_file != 'undefined') {
+                    $("#form-user-update-thumb").prop('src', msg.user.user_terms.thumb_file);
                     $("#form-user-update-thumb").removeClass('d-none');
                 }
 
@@ -78,8 +78,8 @@ $(document).ready(function(){
 
 
                 // -- user image --
-                if(typeof msg.user.user_terms.thumb_path != 'undefined') {
-                $("#form-user-update-thumb-img").attr('src', msg.user.user_terms.thumb_path);
+                if(typeof msg.user.user_terms.thumb_file != 'undefined') {
+                $("#form-user-update-thumb-img").attr('src', msg.user.user_terms.thumb_file);
                 $("#form-user-update-thumb").removeClass('d-none');
                 }
 
