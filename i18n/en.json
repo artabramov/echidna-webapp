@@ -115,17 +115,7 @@
         "12": "December"
     },
 
-    "sizes": {
-        "0": "B", 
-        "1": "KiB", 
-        "2": "MiB", 
-        "3": "GiB", 
-        "4": "TiB", 
-        "5": "PiB", 
-        "6": "EiB", 
-        "7": "ZiB", 
-        "8": "YiB"
-    },
+    "sizes": ["B", "KiB", "MiB", "GiB", "TiB", "PiB", "EiB", "ZiB", "YiB"],
 
     "navbar": {
         "users": "Users",
@@ -143,7 +133,7 @@
 
     "footer": {
         "offer": "Offer",
-        "help": "Help"
+        "hello": "Hello"
     },
 
     "form": {
@@ -190,8 +180,8 @@
 
     "page": {
 
-        "help": {
-            "title": "Help"
+        "hello": {
+            "title": "Hello"
         },
 
         "offer": {
@@ -199,15 +189,24 @@
         },
 
         "users": {
-            "title": "Users list"
+            "title": "Users"
         },
 
         "repos": {
-            "title": "Repos list"
+            "title": "Repos",
+            "insert": "Add",
+            "th-id": "ID",
+            "th-create-date": "Create date",
+            "th-repo-name": "Repo name",
+            "th-roles-count": "Roles count",
+            "th-posts-count": "Posts count",
+            "th-uploads-count": "Uploads count",
+            "th-uploads-sum": "Uploads sum",
+            "th-user-role": "User role"
         },
 
         "uploads": {
-            "title": "Uploads list"
+            "title": "Uploads"
         }
     },
 

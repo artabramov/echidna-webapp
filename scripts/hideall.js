@@ -1,11 +1,4 @@
-function page(page) {
-
-    console.log(page);
-
-    // Title
-
-    $('#page-title').text(I18N['page'][page]['title']);
-    $('#page-title').removeClass('d-none');
+function hideall() {
 
     // Hide forms
     $('#form-user-remind').offcanvas('hide');

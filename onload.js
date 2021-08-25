@@ -9,7 +9,7 @@ const APP_TIMEZONES = [
   ];
 
 // -- Page --
-var APP_PAGE = 'help';
+var APP_PAGE = 'hello';
 
 // -- User token --
 var USER_TOKEN = !$.cookie('user-token') ? '' : $.cookie('user-token');
@@ -65,6 +65,13 @@ $(document).ready(function(){
             });
         });
 
+        // Pages
+        $.each(I18N['page'], function(parent_key, value) {
+            $.each(I18N['page'][parent_key], function(child_key, value) {
+                $('#' + "page-" + parent_key + "-" + child_key).text(value);
+            });
+        });
+
         // Footer
         $.each(I18N['footer'], function(key, value) {
             $('#footer-' + key).text(value);
@@ -72,42 +79,47 @@ $(document).ready(function(){
 
         // -- Links handlers --
         $('#navbar-logo').click(function() {
-            APP_PAGE = 'help';
-            page(APP_PAGE);
+            //APP_PAGE = 'help';
+            //page(APP_PAGE);
+            console.log('hello');
         });
 
         $('#navbar-users').click(function() {
-            APP_PAGE = 'users';
-            page(APP_PAGE);
+            //APP_PAGE = 'users';
+            //page(APP_PAGE);
+            console.log('users');
         });
 
         $('#navbar-uploads').click(function() {
-            APP_PAGE = 'uploads';
-            page(APP_PAGE);
+            //APP_PAGE = 'uploads';
+            //page(APP_PAGE);
+            console.log('uploads');
         });
 
         $('#navbar-repos').click(function() {
-            APP_PAGE = 'repos';
-            page(APP_PAGE);
+            repo_list(0);
         });
 
         $('#form-user-register-offer-link').click(function() {
-            APP_PAGE = 'offer';
-            page(APP_PAGE);
+            //APP_PAGE = 'offer';
+            //page(APP_PAGE);
+            console.log('offer');
         });
 
         $('#footer-offer').click(function() {
-            APP_PAGE = 'offer';
-            page(APP_PAGE);
+            //APP_PAGE = 'offer';
+            //page(APP_PAGE);
+            console.log('offer');
         });
 
-        $('#footer-help').click(function() {
-            APP_PAGE = 'help';
-            page(APP_PAGE);
+        $('#footer-hello').click(function() {
+            //APP_PAGE = 'help';
+            //page(APP_PAGE);
+            console.log('hello');
         });
 
         // Show page
-        page(APP_PAGE);
+        //page(APP_PAGE);
 
     });
 });

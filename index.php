@@ -20,7 +20,7 @@
         <script src="/webapp/onload.js" crossorigin="anonymous"></script>
         <script src="/webapp/scripts/filesize.js" crossorigin="anonymous"></script>
         <script src="/webapp/scripts/datetime.js" crossorigin="anonymous"></script>
-        <script src="/webapp/scripts/page.js" crossorigin="anonymous"></script>
+        <script src="/webapp/scripts/hideall.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/user_register.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/user_remind.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/user_signin.js" crossorigin="anonymous"></script>
@@ -28,9 +28,11 @@
         <script src="/webapp/events/user_signout.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/user_update.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/thumb_post.js" crossorigin="anonymous"></script>
+        
+        <script src="/webapp/events/repo_list.js" crossorigin="anonymous"></script>
+        
         <!--
         <script src="/webapp/events/user_list.js" crossorigin="anonymous"></script>
-        <script src="/webapp/events/repo_list.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/upload_list.js" crossorigin="anonymous"></script>
         -->
         <script src="/webapp/events/do.js" crossorigin="anonymous"></script>
@@ -54,8 +56,25 @@
         <h1 id="page-uploads-title" class="d-none"></h1>
         -->
 
+        
         <div class="container-fluid min-vh-100 d-flex flex-column p-5">
-            <h1 id="page-title" class="d-none"></h1>
+
+            <!-- Repos -->
+            <?php require_once(__DIR__ . '/pages/repos.html'); ?>
+
+
+            <!-- Users -->
+            <h1 id="page-users-title" class="d-none"></h1>
+
+            <!-- Uploads -->
+            <h1 id="page-uploads-title" class="d-none"></h1>
+
+            <!-- Hello -->
+            <h1 id="page-hello-title" class="d-none"></h1>
+
+            <!-- Offer -->
+            <h1 id="page-offer-title" class="d-none"></h1>
+
         </div>
 
 
@@ -64,7 +83,7 @@
         <footer class="bg-dark text-center text-white">
             <div class="text-center p-3">
                 <a id="footer-offer" class="text-white" href="#"></a>
-                <a id="footer-help" class="text-white" href="#"></a>
+                <a id="footer-hello" class="text-white" href="#"></a>
                 <a id="footer-do" class="text-white" href="#">Do!</a>
             </div>
         </footer>

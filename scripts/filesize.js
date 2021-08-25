@@ -6,10 +6,13 @@
  * 
  * @return Formatted string.
  */
-function filesize(bytes, thresh=1024, dp=1) {
+function filesize(bytes, sizes) {
+
+  const thresh=1024;
+  const dp=1;
 
   if (Math.abs(bytes) < thresh) {
-    return bytes + ' ' + ECHIDNA_FILESIZES[0];
+    return bytes + ' ' + sizes[0];
   }
 
   let u = 0;
@@ -18,7 +21,7 @@ function filesize(bytes, thresh=1024, dp=1) {
   do {
     bytes /= thresh;
     ++u;
-  } while (Math.round(Math.abs(bytes) * r) / r >= thresh && u < ECHIDNA_FILESIZES.length - 1);
+  } while (Math.round(Math.abs(bytes) * r) / r >= thresh && u < sizes.length - 1);
 
-  return bytes.toFixed(dp) + ' ' + ECHIDNA_FILESIZES[u];
+  return bytes.toFixed(dp) + ' ' + sizes[u];
 }
