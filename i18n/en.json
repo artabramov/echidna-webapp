@@ -183,6 +183,26 @@
         
     },
 
+    "page": {
+        "users": {
+            "title": "Users list"
+        },
+
+        "repos": {
+            "title": "Repos list"
+        },
+
+        "uploads": {
+            "title": "Uploads list"
+        }
+    },
+
+
+
+
+
+    
+
 
 
 

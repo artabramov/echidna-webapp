@@ -9,8 +9,10 @@ const APP_TIMEZONES = [
   ];
 
 // -- User token --
-var USER_TOKEN = !$.cookie('user-token') ? null : $.cookie('user-token');
-$.cookie('user-token', USER_TOKEN);
+var USER_TOKEN = !$.cookie('user-token') ? '' : $.cookie('user-token');
+if(USER_TOKEN) {
+    $.cookie('user-token', USER_TOKEN);
+}
 
 // -- User language --
 var tmp = !$.cookie('user-lang') ? navigator.language.split('-')[0] || navigator.userLanguage.split('-')[0] : $.cookie('user-lang');
@@ -59,5 +61,15 @@ $(document).ready(function(){
                 $('#' + "form-" + parent_key + "-" + child_key).text(value);
             });
         });
+
+        // Pages
+        /*
+        $.each(I18N['page'], function(parent_key, value) {
+            $.each(I18N['page'][parent_key], function(child_key, value) {
+                $('#' + "page-" + parent_key + "-" + child_key).text(value);
+            });
+        });
+        */
+
     });
 });

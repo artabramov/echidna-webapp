@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-    $("#navbar-do").click(function(){
+    $("#footer-do").click(function(){
         console.log("ECHIDNA_URL: " + ECHIDNA_URL);
         console.log("APP_DEBUG: " + APP_DEBUG);
         console.log("APP_LANGS: " + APP_LANGS);

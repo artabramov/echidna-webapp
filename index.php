@@ -26,6 +26,9 @@
         <script src="/webapp/events/user_signout.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/user_update.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/thumb_post.js" crossorigin="anonymous"></script>
+        <script src="/webapp/events/user_list.js" crossorigin="anonymous"></script>
+        <script src="/webapp/events/repo_list.js" crossorigin="anonymous"></script>
+        <script src="/webapp/events/upload_list.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/do.js" crossorigin="anonymous"></script>
 
         <title>Echidna Docs</title>
@@ -41,7 +44,21 @@
         require_once(__DIR__ . '/forms/user_update.html');
         ?>
 
-        <h1>Hello, world!</h1>
+        <!--
+        <h1 id="page-users-title" class="d-none"></h1>
+        <h1 id="page-repos-title" class="d-none"></h1>
+        <h1 id="page-uploads-title" class="d-none"></h1>
+        -->
+
+        <h1 id="page-title" class="d-none"></h1>
+
+        <!-- Footer -->
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <footer class="bg-dark text-center text-white">
+            <div class="text-center p-3">
+                <a id="footer-do" class="text-white" href="#">Do!</a>
+            </div>
+        </footer>
 
     </body>
 </html>
