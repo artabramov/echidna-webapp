@@ -8,6 +8,9 @@ const APP_TIMEZONES = [
     'Indian/Maldives'
   ];
 
+// -- Page --
+var APP_PAGE = 'help';
+
 // -- User token --
 var USER_TOKEN = !$.cookie('user-token') ? '' : $.cookie('user-token');
 if(USER_TOKEN) {
@@ -62,14 +65,49 @@ $(document).ready(function(){
             });
         });
 
-        // Pages
-        /*
-        $.each(I18N['page'], function(parent_key, value) {
-            $.each(I18N['page'][parent_key], function(child_key, value) {
-                $('#' + "page-" + parent_key + "-" + child_key).text(value);
-            });
+        // Footer
+        $.each(I18N['footer'], function(key, value) {
+            $('#footer-' + key).text(value);
         });
-        */
+
+        // -- Links handlers --
+        $('#navbar-logo').click(function() {
+            APP_PAGE = 'help';
+            page(APP_PAGE);
+        });
+
+        $('#navbar-users').click(function() {
+            APP_PAGE = 'users';
+            page(APP_PAGE);
+        });
+
+        $('#navbar-uploads').click(function() {
+            APP_PAGE = 'uploads';
+            page(APP_PAGE);
+        });
+
+        $('#navbar-repos').click(function() {
+            APP_PAGE = 'repos';
+            page(APP_PAGE);
+        });
+
+        $('#form-user-register-offer-link').click(function() {
+            APP_PAGE = 'offer';
+            page(APP_PAGE);
+        });
+
+        $('#footer-offer').click(function() {
+            APP_PAGE = 'offer';
+            page(APP_PAGE);
+        });
+
+        $('#footer-help').click(function() {
+            APP_PAGE = 'help';
+            page(APP_PAGE);
+        });
+
+        // Show page
+        page(APP_PAGE);
 
     });
 });

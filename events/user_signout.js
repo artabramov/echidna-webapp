@@ -36,6 +36,10 @@ $(document).ready(function(){
 
                 // -- clear timezones --
                 $('#form-user-update-timezone').empty();
+
+                // -- page --
+                APP_PAGE = 'help';
+                page(APP_PAGE);
             }
 
         });

@@ -130,7 +130,7 @@
     "navbar": {
         "users": "Users",
         "repos-inline": "Repos",
-        "uploads": "Files",
+        "uploads": "Uploads",
         "remind": "Remind",
         "user-update": "Update user",
         "user-volume": "Available volume",
@@ -139,6 +139,11 @@
 
     "search": {
         "placeholder": "Search posts"
+    },
+
+    "footer": {
+        "offer": "Offer",
+        "help": "Help"
     },
 
     "form": {
@@ -184,6 +189,15 @@
     },
 
     "page": {
+
+        "help": {
+            "title": "Help"
+        },
+
+        "offer": {
+            "title": "Offer"
+        },
+
         "users": {
             "title": "Users list"
         },
