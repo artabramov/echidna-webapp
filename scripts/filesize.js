@@ -11,7 +11,10 @@ function filesize(bytes, sizes) {
   const thresh=1024;
   const dp=1;
 
-  if (Math.abs(bytes) < thresh) {
+  if(bytes == 0) {
+    return '0';
+    
+  } else if (Math.abs(bytes) < thresh) {
     return bytes + ' ' + sizes[0];
   }
 
