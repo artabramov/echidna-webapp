@@ -36,9 +36,9 @@ $(document).ready(function(){
 
                     // -- timezones --
                     $.each(APP_TIMEZONES, function(key, value) {
-                        $("#form-user-update-timezone").append(new Option(value, value));
+                        $('#form-user-update-timezone').append(new Option(value, value));
                     });
-                    $("#form-user-update-timezone").val(USER_TIMEZONE).change();
+                    $('#form-user-update-timezone').val(USER_TIMEZONE).change();
 
             } else {
                 $('#navbar-remind').removeClass('d-none');
@@ -48,5 +48,4 @@ $(document).ready(function(){
     } else {
         $('#navbar-remind').removeClass('d-none');
     }
-
 });

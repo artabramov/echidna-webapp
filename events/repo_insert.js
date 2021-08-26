@@ -1,15 +1,14 @@
 $(document).ready(function(){
+    $('#form-repo-insert-submit').click(function(){
 
-    $("#form-repo-insert-submit").click(function(){
-
-        // -- hide error, disable submit & show spinner --
-        $("#form-repo-insert-error").addClass('d-none');
+        // Hide error, disable submit & show spinner
+        $('#form-repo-insert-error').addClass('d-none');
         $('#form-repo-insert-submit').prop('disabled', true);
-        $("#form-repo-insert-spinner").removeClass('d-none');
+        $('#form-repo-insert-spinner').removeClass('d-none');
 
         $.ajax({
-            method: "POST",
-            url: ECHIDNA_URL + "repo/?user_token=" + USER_TOKEN + "&repo_name=" + $("#form-repo-insert-name").val(),
+            method: 'POST',
+            url: ECHIDNA_URL + 'repo/?user_token=' + USER_TOKEN + '&repo_name=' + $('#form-repo-insert-name').val(),
             dataType: 'json'
 
         }).done(function(msg) {
@@ -20,26 +19,20 @@ $(document).ready(function(){
 
             if(msg.success == 'true') {
 
-                // -- clear table & update data --
-                $("#page-repos-table > tbody").empty();
-                $("#page-repos-pagination > ul").empty();
+                // Clear table & update data
+                $('#page-repos-table > tbody').empty();
+                $('#page-repos-pagination > ul').empty();
                 repo_list(0);
-
-                // -- clear form, enable submit & hide spinner --
-                $('#form-repo-insert').offcanvas('hide');
-                $('#form-repo-insert-name').val('');
-                $('#form-repo-insert-submit').prop('disabled', false);
-                $("#form-repo-insert-spinner").addClass('d-none');
+                hideforms();
+                clearforms();
 
             } else {
-                // -- show error, enable submit & hide spinner --
-                $("#form-repo-insert-error").text(I18N['errors'][msg.error.code]);
-                $("#form-repo-insert-error").removeClass('d-none');
+                // Show error, enable submit & hide spinner
+                $('#form-repo-insert-error').text(I18N['errors'][msg.error.code]);
+                $('#form-repo-insert-error').removeClass('d-none');
                 $('#form-repo-insert-submit').prop('disabled', false);
-                $("#form-repo-insert-spinner").addClass('d-none');
+                $('#form-repo-insert-spinner').addClass('d-none');
             }
-
         });
-
     });
 });

@@ -21,8 +21,11 @@
 
         <script src="/webapp/scripts/filesize.js" crossorigin="anonymous"></script>
         <script src="/webapp/scripts/datetime.js" crossorigin="anonymous"></script>
+        <script src="/webapp/scripts/clearforms.js" crossorigin="anonymous"></script>
         <script src="/webapp/scripts/hideforms.js" crossorigin="anonymous"></script>
         <script src="/webapp/scripts/hidepages.js" crossorigin="anonymous"></script>
+        <script src="/webapp/scripts/shownav.js" crossorigin="anonymous"></script>
+        <script src="/webapp/scripts/hidenav.js" crossorigin="anonymous"></script>
         <script src="/webapp/scripts/pagination.js" crossorigin="anonymous"></script>
 
         <script src="/webapp/events/user_register.js" crossorigin="anonymous"></script>

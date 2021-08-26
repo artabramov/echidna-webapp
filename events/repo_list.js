@@ -1,15 +1,15 @@
 function repo_list(offset) {
 
-    // -- hide forms & toggle tables --
+    // Hide forms & toggle tables
     hideforms();
     hidepages();
     $('#page-repos').removeClass('d-none');
-    $("#page-repos-table > tbody").empty();
-    $("#page-repos-pagination > ul").empty();
+    $('#page-repos-table > tbody').empty();
+    $('#page-repos-pagination > ul').empty();
 
     $.ajax({
-        method: "GET",
-        url: ECHIDNA_URL + "repos/?user_token=" + USER_TOKEN + "&offset=" + offset,
+        method: 'GET',
+        url: ECHIDNA_URL + 'repos/?user_token=' + USER_TOKEN + '&offset=' + offset,
         dataType: 'json'
 
     }).done(function( msg ) {
@@ -45,10 +45,6 @@ function repo_list(offset) {
             });
 
             pagination('page-repos-pagination', 'repo_list', offset, msg.repos_limit, msg.repos_count);
-
         }
-
     });
 }
-
-

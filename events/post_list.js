@@ -1,11 +1,11 @@
 function post_list(repo_id, post_status, offset) {
 
-    // -- hide forms & toggle tables --
+    // Hide forms & toggle tables
     hideforms();
     hidepages();
     $('#page-posts').removeClass('d-none');
-    $("#page-posts-table > tbody").empty();
-    $("#page-posts-pagination > ul").empty();
+    $('#page-posts-table > tbody').empty();
+    $('#page-posts-pagination > ul').empty();
 
     console.log(repo_id);
 
@@ -20,8 +20,8 @@ function post_list(repo_id, post_status, offset) {
 
 
     $.ajax({
-        method: "GET",
-        url: ECHIDNA_URL + "posts/?user_token=" + USER_TOKEN + "&repo_id=" + repo_id + "&post_status=" + post_status + "&offset=" + offset,
+        method: 'GET',
+        url: ECHIDNA_URL + 'posts/?user_token=' + USER_TOKEN + '&repo_id=' + repo_id + '&post_status=' + post_status + '&offset=' + offset,
         dataType: 'json'
 
     }).done(function( msg ) {
