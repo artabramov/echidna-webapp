@@ -18,9 +18,13 @@
 
         <!-- App -->
         <script src="/webapp/onload.js" crossorigin="anonymous"></script>
+
         <script src="/webapp/scripts/filesize.js" crossorigin="anonymous"></script>
         <script src="/webapp/scripts/datetime.js" crossorigin="anonymous"></script>
-        <script src="/webapp/scripts/hideall.js" crossorigin="anonymous"></script>
+        <script src="/webapp/scripts/hideforms.js" crossorigin="anonymous"></script>
+        <script src="/webapp/scripts/hidepages.js" crossorigin="anonymous"></script>
+        <script src="/webapp/scripts/pagination.js" crossorigin="anonymous"></script>
+
         <script src="/webapp/events/user_register.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/user_remind.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/user_signin.js" crossorigin="anonymous"></script>
@@ -28,8 +32,9 @@
         <script src="/webapp/events/user_signout.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/user_update.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/thumb_post.js" crossorigin="anonymous"></script>
-        
+        <script src="/webapp/events/repo_insert.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/repo_list.js" crossorigin="anonymous"></script>
+        <script src="/webapp/events/post_list.js" crossorigin="anonymous"></script>
         
         <!--
         <script src="/webapp/events/user_list.js" crossorigin="anonymous"></script>
@@ -48,6 +53,8 @@
         require_once(__DIR__ . '/forms/user_remind.html');
         require_once(__DIR__ . '/forms/user_signin.html');
         require_once(__DIR__ . '/forms/user_update.html');
+        require_once(__DIR__ . '/forms/repo_insert.html');
+        require_once(__DIR__ . '/forms/post_insert.html');
         ?>
 
         <!--
@@ -60,7 +67,10 @@
         <div class="container-fluid min-vh-100 d-flex flex-column p-5">
 
             <!-- Repos -->
-            <?php require_once(__DIR__ . '/pages/repos.html'); ?>
+            <?php 
+            require_once(__DIR__ . '/pages/repos.html');
+            require_once(__DIR__ . '/pages/posts.html');
+            ?>
 
 
             <!-- Users -->

@@ -39,7 +39,7 @@ $(document).ready(function(){
 
                 // -- page --
                 APP_PAGE = 'help';
-                page(APP_PAGE);
+                //page(APP_PAGE);
             }
 
         });

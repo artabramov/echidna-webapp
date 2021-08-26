@@ -174,6 +174,27 @@
             "bio-label": "User bio",
             "create-date-label": "Create date",
             "submit": "Update"
+        },
+
+        "repo-insert": {
+            "title": "Repo insert",
+            "name-label": "Repo name",
+            "name-text": "Additional classes can be used to vary this layout on a per-form basis.",
+            "submit": "Insert"
+        },
+
+        "post-insert": {
+            "title": "Post insert",
+            "repo-id-label": "Repo id",
+            "post-title-label": "Post title",
+            "post-title-text": "Additional classes can be used to vary this layout on a per-form basis.",
+            "todo-label": "Todo",
+            "todo-text": "Additional classes can be used to vary this layout on a per-form basis.",
+            "doing-label": "Doing",
+            "doing-text": "Additional classes can be used to vary this layout on a per-form basis.",
+            "done-label": "Done",
+            "done-text": "Additional classes can be used to vary this layout on a per-form basis.",
+            "submit": "Insert"
         }
         
     },
@@ -205,9 +226,19 @@
             "th-user-role": "User role"
         },
 
+        "posts": {
+            "title": "Posts",
+            "insert": "Add",
+            "todo": "Todo",
+            "doing": "Doing",
+            "done": "Done"
+        },
+
         "uploads": {
             "title": "Uploads"
         }
+
+
     },
 
 

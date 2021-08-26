@@ -1,7 +1,11 @@
 function repo_list(offset) {
 
-    hideall();
+    // -- hide forms & toggle tables --
+    hideforms();
+    hidepages();
     $('#page-repos').removeClass('d-none');
+    $("#page-repos-table > tbody").empty();
+    $("#page-repos-pagination > ul").empty();
 
     $.ajax({
         method: "GET",
@@ -30,7 +34,7 @@ function repo_list(offset) {
                     '<tr>' +
                     '<th scope="row">' + repo.id + '</th>' +
                     '<td>' + repo.create_date + '</td>' +
-                    '<td><a href="' + ECHIDNA_URL + '?page=posts&repo_id=' + repo.id + '&post_status=doing&offset=0">' + repo.repo_name + '</a></td>' +
+                    '<td><a href="#" onClick="post_list(' + repo.id + ', \'todo\', 0);">' + repo.repo_name + '</a></td>' +
                     '<td>' + repo.repo_terms.roles_count + '</td>' +
                     '<td>' + posts_count + '</td>' +
                     '<td>' + uploads_count + '</td>' +
@@ -40,9 +44,7 @@ function repo_list(offset) {
                 );
             });
 
-            
-
-            //getPagination(offset, msg.repos_limit, msg.repos_count, ECHIDNA_URL + '?page=repos&offset=');
+            pagination('page-repos-pagination', 'repo_list', offset, msg.repos_limit, msg.repos_count);
 
         }
 
