@@ -8,23 +8,23 @@
  */
 function filesize(bytes, sizes) {
 
-  const thresh=1024;
-  const dp=1;
+    const thresh=1024;
+    const dp=1;
 
-  if(bytes == 0) {
-    return '0';
-    
-  } else if (Math.abs(bytes) < thresh) {
-    return bytes + ' ' + sizes[0];
-  }
+    if(bytes == 0) {
+        return '0';
 
-  let u = 0;
-  const r = 10**dp;
+    } else if (Math.abs(bytes) < thresh) {
+        return bytes + ' ' + sizes[0];
+    }
 
-  do {
-    bytes /= thresh;
-    ++u;
-  } while (Math.round(Math.abs(bytes) * r) / r >= thresh && u < sizes.length - 1);
+    let u = 0;
+    const r = 10**dp;
 
-  return bytes.toFixed(dp) + ' ' + sizes[u];
+    do {
+        bytes /= thresh;
+        ++u;
+    } while (Math.round(Math.abs(bytes) * r) / r >= thresh && u < sizes.length - 1);
+
+    return bytes.toFixed(dp) + ' ' + sizes[u];
 }
