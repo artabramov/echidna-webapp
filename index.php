@@ -38,6 +38,7 @@
         <script src="/webapp/events/repo_insert.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/repo_list.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/post_list.js" crossorigin="anonymous"></script>
+        <script src="/webapp/events/post_insert.js" crossorigin="anonymous"></script>
         
         <!--
         <script src="/webapp/events/user_list.js" crossorigin="anonymous"></script>

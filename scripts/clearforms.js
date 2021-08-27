@@ -34,4 +34,12 @@ function clearforms() {
     $('#form-repo-insert-submit').prop('disabled', false);
     $('#form-repo-insert-spinner').addClass('d-none');
 
+    // Post insert
+    $('#form-post-insert-post-title').val('');
+    $('input[name="form-post-insert-status"]').prop('checked', false);
+    $('#form-post-insert-error').text('');
+    $('#form-post-insert-error').addClass('d-none');
+    $('#form-post-insert-submit').prop('disabled', false);
+    $('#form-post-insert-spinner').addClass('d-none');
+
 }

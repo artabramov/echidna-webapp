@@ -231,7 +231,15 @@
             "insert": "Add",
             "todo": "Todo",
             "doing": "Doing",
-            "done": "Done"
+            "done": "Done",
+            "th-id": "ID",
+            "th-create-date": "Create date",
+            "th-post-status": "Post status",
+            "th-post-title": "Post title",
+            "th-post-tags": "Post tags",
+            "th-comments-count": "Comments count",
+            "th-uploads-count": "Uploads count",
+            "th-uploads-sum": "Uploads sum"
         },
 
         "uploads": {
