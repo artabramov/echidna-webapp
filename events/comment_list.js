@@ -4,10 +4,12 @@ function comment_list(post_id, offset) {
     hideforms();
     hidepages();
     $('#page-comments').removeClass('d-none');
-    //$('#page-posts-table > tbody').empty();
-    $('#page-comments-pagination > ul').empty();
+    $('#page-comments-list').empty();
+    $('#form-comment-insert-post-id').val(post_id);
+    
+    //$('#page-comments-pagination > ul').empty();
 
-    //$('#form-post-insert-repo-id').val(repo_id);
+    
 
 
 
@@ -22,23 +24,20 @@ function comment_list(post_id, offset) {
             console.log(msg);
         }
 
-        /*
+        
         if(msg.success == 'true') {
-            //$('#page-posts-title').text(msg.repo.repo_name);
 
-            // nav
-            $('#page-posts-todo-count').text(typeof msg.repo.repo_terms.todo_count != 'undefined' ? msg.repo.repo_terms.todo_count : '0');
-            $('#page-posts-doing-count').text(typeof msg.repo.repo_terms.doing_count != 'undefined' ? msg.repo.repo_terms.doing_count : '0');
-            $('#page-posts-done-count').text(typeof msg.repo.repo_terms.done_count != 'undefined' ? msg.repo.repo_terms.done_count : '0');
 
-            msg.posts.forEach(function(post) {
+            msg.comments.forEach(function(comment) {
 
-                //var post_alerts = 'TODO';
-                var post_tags = 'post tags';
-                var comments_count = typeof post.post_terms.comments_count != 'undefined' ? parseInt(post.post_terms.comments_count) : 0;
-                var uploads_count = typeof post.post_terms.uploads_count != 'undefined' ? parseInt(post.post_terms.uploads_count) : 0;
-                var uploads_sum = typeof post.post_terms.uploads_sum != 'undefined' ? parseInt(post.post_terms.uploads_sum) : 0;
+                $('#page-comments-list').append(
+                    '<div>' +
+                    comment.id + '<br>' +
+                    comment.comment_content + '<br><br>' + 
+                    '</div>'
+                );
 
+                /*
                 $('#page-posts-table').find('tbody').append(
                     '<tr>' +
                     '<th scope="row">' + post.id + '</th>' +
@@ -51,11 +50,13 @@ function comment_list(post_id, offset) {
                     '<td>' + uploads_sum + '</td>' +
                     '</tr>'
                 );
+                */
             });
 
             //console.log(msg.posts_limit);
             //pagination('page-posts-pagination', 'post_list', offset, msg.posts_limit, msg.posts_count);
 
+            /*
             // -- Pagination --
             var pages_count = Math.ceil( msg.posts_count / msg.posts_limit );
             var page_active = Math.floor( offset / msg.posts_limit );
@@ -81,11 +82,11 @@ function comment_list(post_id, offset) {
             // next
             disabled = page_active == page_end ? ' disabled' : '';
             $('#page-posts-pagination').find('ul').append('<li class="page-item' + disabled + '"><a class="page-link" href="#" onClick="post_list(' + repo_id + ', \'' + post_status + '\', ' + ((page_active + 1) * msg.posts_limit) + ');">Next</a></li>');
-
+            */
 
 
             
         }
-        */
+        
     });
 }

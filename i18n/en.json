@@ -173,14 +173,14 @@
             "timezone-label": "User timezone",
             "bio-label": "User bio",
             "create-date-label": "Create date",
-            "submit": "Update"
+            "submit": "Update user"
         },
 
         "repo-insert": {
             "title": "Repo insert",
             "name-label": "Repo name",
             "name-text": "Additional classes can be used to vary this layout on a per-form basis.",
-            "submit": "Insert"
+            "submit": "Insert repo"
         },
 
         "post-insert": {
@@ -194,7 +194,15 @@
             "doing-text": "Additional classes can be used to vary this layout on a per-form basis.",
             "done-label": "Done",
             "done-text": "Additional classes can be used to vary this layout on a per-form basis.",
-            "submit": "Insert"
+            "submit": "Insert post"
+        },
+
+        "comment-insert": {
+            "title": "Comment insert",
+            "post-id-label": "Post id",
+            "content-label": "Comment content",
+            "files-label": "Files",
+            "submit": "Insert comment"
         }
         
     },

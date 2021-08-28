@@ -40,6 +40,7 @@
         <script src="/webapp/events/post_list.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/post_insert.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/comment_list.js" crossorigin="anonymous"></script>
+        <script src="/webapp/events/comment_insert.js" crossorigin="anonymous"></script>
         
         <!--
         <script src="/webapp/events/user_list.js" crossorigin="anonymous"></script>
@@ -60,6 +61,7 @@
         require_once(__DIR__ . '/forms/user_update.html');
         require_once(__DIR__ . '/forms/repo_insert.html');
         require_once(__DIR__ . '/forms/post_insert.html');
+        require_once(__DIR__ . '/forms/comment_insert.html');
         ?>
 
         <!--

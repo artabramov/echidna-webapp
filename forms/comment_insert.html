@@ -1,0 +1,41 @@
+<div id="form-comment-insert" class="offcanvas offcanvas-start" tabindex="-1" aria-labelledby="form-comment-insert">
+  <div class="offcanvas-header">
+    <h5 id="form-comment-insert-title" class="offcanvas-title"></h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <form>
+
+    <!-- error -->
+    <div id="form-comment-insert-error" class="alert alert-danger d-none" role="alert">
+    </div>
+
+    <!-- post id -->
+    <div class="form-floating mb-3">
+      <input id="form-comment-insert-post-id" type="text" class="form-control" placeholder=" " disabled>
+      <label id="form-comment-insert-post-id-label" for="form-comment-insert-post-id"></label>
+    </div>
+
+    <!-- comment content -->
+    <div class="form-floating mb-3">
+      <textarea id="form-comment-insert-content" class="form-control" placeholder=" " style="height: 400px" maxlength="2048"></textarea>
+      <label id="form-comment-insert-content-label" for="form-comment-insert-content"></label>
+    </div>
+
+    <!-- files -->
+    <div class="mb-3">
+      <small id="form-comment-insert-files-label" class="text-muted"></small>
+      <input id="form-comment-insert-files" class="form-control" type="file" multiple>
+    </div>
+
+    <!-- submit -->
+    <button id="form-comment-insert-submit" class="btn btn-primary" type="button"></button>
+
+    <!-- spinner -->
+    <div id="form-comment-insert-spinner" class="spinner-border spinner-border-sm text-dark d-none" role="status">
+      <span class="visually-hidden">Wait</span>
+    </div>
+
+  </form>
+  </div>
+</div>

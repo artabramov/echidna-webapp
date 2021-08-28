@@ -7,4 +7,5 @@ function hideforms() {
     $('#form-user-update').offcanvas('hide');
     $('#form-repo-insert').offcanvas('hide');
     $('#form-post-insert').offcanvas('hide');
+    $('#form-comment-insert').offcanvas('hide');
 }

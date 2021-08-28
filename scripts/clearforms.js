@@ -42,4 +42,11 @@ function clearforms() {
     $('#form-post-insert-submit').prop('disabled', false);
     $('#form-post-insert-spinner').addClass('d-none');
 
+    // Comment insert
+    $('#form-comment-insert-content').val('');
+    $('#form-comment-insert-error').text('');
+    $('#form-comment-insert-error').addClass('d-none');
+    $('#form-comment-insert-submit').prop('disabled', false);
+    $('#form-comment-insert-spinner').addClass('d-none');
+
 }
