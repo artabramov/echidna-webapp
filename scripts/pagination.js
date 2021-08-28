@@ -17,7 +17,7 @@ function pagination(id, func, offset, rows_on_page, rows_count, url) {
     $('#' + id).find('ul').append('<li class="page-item' + disabled + '"><a class="page-link" href="#" onClick="eval(\'' + func + '\')(' + ((page_active - 1) * rows_on_page) + ');">Prev</a></li>');
 
     // pages
-    for( i=page_start; i<=page_end; i++ ) {
+    for( i = page_start; i<=page_end; i++ ) {
         active = i == page_active ? ' active' : '';
         $('#' + id).find('ul').append('<li class="page-item' + active + '"><a class="page-link" href="#" onClick="eval(\'' + func + '\')(' + (i * rows_on_page) + ');">' + i + '</a></li>');
     }

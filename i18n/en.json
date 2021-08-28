@@ -215,7 +215,7 @@
 
         "repos": {
             "title": "Repos",
-            "insert": "Add",
+            "insert": "Add repo",
             "th-id": "ID",
             "th-create-date": "Create date",
             "th-repo-name": "Repo name",
@@ -228,10 +228,10 @@
 
         "posts": {
             "title": "Posts",
-            "insert": "Add",
-            "todo": "Todo",
-            "doing": "Doing",
-            "done": "Done",
+            "insert": "Add post",
+            "todo-text": "Todo",
+            "doing-text": "Doing",
+            "done-text": "Done",
             "th-id": "ID",
             "th-create-date": "Create date",
             "th-post-status": "Post status",
@@ -240,6 +240,11 @@
             "th-comments-count": "Comments count",
             "th-uploads-count": "Uploads count",
             "th-uploads-sum": "Uploads sum"
+        },
+
+        "comments": {
+            "title": "Comments",
+            "insert": "Add comment"
         },
 
         "uploads": {

@@ -1,43 +1,19 @@
-function post_list(repo_id, post_status, offset) {
+function comment_list(post_id, offset) {
 
     // Hide forms & toggle tables
     hideforms();
     hidepages();
-    $('#page-posts').removeClass('d-none');
-    $('#page-posts-table > tbody').empty();
-    $('#page-posts-pagination > ul').empty();
+    $('#page-comments').removeClass('d-none');
+    //$('#page-posts-table > tbody').empty();
+    $('#page-comments-pagination > ul').empty();
 
-    $('#form-post-insert-repo-id').val(repo_id);
+    //$('#form-post-insert-repo-id').val(repo_id);
 
-    // Posts nav
-    $('#page-posts-todo').removeClass('active');
-    $('#page-posts-doing').removeClass('active');
-    $('#page-posts-done').removeClass('active');
-    $('#page-posts-' + post_status).addClass('active');
-
-    //$('#page-posts-done').prop('onclick', "post_list(' + repo.id + ', \'todo\', 0);");
-    //$element.prop("onclick", null);
-
-    $('#page-posts-todo').prop('onclick', null).off('click');
-    $('#page-posts-doing').prop('onclick', null).off('click');
-    $('#page-posts-done').prop('onclick', null).off('click');
-
-    $('#page-posts-todo').click(function() {post_list(repo_id, 'todo', 0);});
-    $('#page-posts-doing').click(function() {post_list(repo_id, 'doing', 0);});
-    $('#page-posts-done').click(function() {post_list(repo_id, 'done', 0);});
-
-    //$('#page-posts-count').text(msg.repo.repo_terms.doing_count);
-
-    /*
-    $("#page-posts-nav-todo").prop("href", ECHIDNA_URL + '?page=posts&repo_id=' + repo_id + '&post_status=todo&offset=0');
-    $("#page-posts-nav-doing").prop("href", ECHIDNA_URL + '?page=posts&repo_id=' + repo_id + '&post_status=doing&offset=0');
-    
-    */
 
 
     $.ajax({
         method: 'GET',
-        url: ECHIDNA_URL + 'posts/?user_token=' + USER_TOKEN + '&repo_id=' + repo_id + '&post_status=' + post_status + '&offset=' + offset,
+        url: ECHIDNA_URL + 'comments/?user_token=' + USER_TOKEN + '&post_id=' + post_id + '&offset=' + offset,
         dataType: 'json'
 
     }).done(function( msg ) {
@@ -46,6 +22,7 @@ function post_list(repo_id, post_status, offset) {
             console.log(msg);
         }
 
+        /*
         if(msg.success == 'true') {
             //$('#page-posts-title').text(msg.repo.repo_name);
 
@@ -67,7 +44,7 @@ function post_list(repo_id, post_status, offset) {
                     '<th scope="row">' + post.id + '</th>' +
                     '<td>' + post.create_date + '</td>' +
                     '<td>' + post.post_status + '</td>' +
-                    '<td><a href="#" onClick="comment_list(' + post.id + ', 0);">' + post.post_title + '</a></td>' +
+                    '<td><a href="#">' + post.post_title + '</a></td>' +
                     '<td>' + post_tags + '</td>' +
                     '<td>' + comments_count + '</td>' +
                     '<td>' + uploads_count + '</td>' +
@@ -109,5 +86,6 @@ function post_list(repo_id, post_status, offset) {
 
             
         }
+        */
     });
 }
