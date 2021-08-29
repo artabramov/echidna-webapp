@@ -1,4 +1,4 @@
-function pagination(id, func, offset, rows_on_page, rows_count, url) {
+function pagination(id, func, offset, rows_on_page, rows_count) {
 
     // pages
     pages_count = Math.ceil( rows_count / rows_on_page );
