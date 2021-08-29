@@ -49,6 +49,9 @@ function comment_list(post_id, offset) {
             if( pages_count > 1 ) {
                 $('#page-comments-pagination').removeClass('d-none');
                 $('#page-comments-pagination').addClass('d-inline');
+            } else {
+                $('#page-comments-pagination').removeClass('d-inline');
+                $('#page-comments-pagination').addClass('d-none');
             }
 
             // prev

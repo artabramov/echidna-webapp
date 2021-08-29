@@ -21,7 +21,7 @@ $(document).ready(function(){
 
                 // Clear form
                 $('#page-comment-list').empty();
-                //$('#page-repos-pagination > ul').empty();
+                //$('#page-comments-pagination > ul').empty();
                 comment_list($('#form-comment-insert-post-id').val(), 0);
                 hideforms();
                 clearforms();

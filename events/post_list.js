@@ -89,6 +89,9 @@ function post_list(repo_id, post_status, offset) {
             if( pages_count > 1 ) {
                 $('#page-posts-pagination').removeClass('d-none');
                 $('#page-posts-pagination').addClass('d-inline');
+            } else {
+                $('#page-posts-pagination').removeClass('d-inline');
+                $('#page-posts-pagination').addClass('d-none');
             }
 
             // prev
