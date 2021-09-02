@@ -46,7 +46,6 @@
         <script src="/webapp/events/user_list.js" crossorigin="anonymous"></script>
         <script src="/webapp/events/upload_list.js" crossorigin="anonymous"></script>
         -->
-        
         <script src="/webapp/events/do.js" crossorigin="anonymous"></script>
 
         <title>Echidna Docs</title>
